@@ -16,7 +16,7 @@ $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color:      #D6285E;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -51,3 +51,80 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+
+body{
+  background-color: #FFFFF3;
+ }
+ h2 {
+  color: #808080;
+ }
+ p{
+  color: gray;
+ }
+
+ a, strong {
+  color: #D6285E !important;
+  /*opacity: 0.5 !important;*/
+ }
+ .trigger a {
+  padding: 0 5px;
+  font-size: 12px;
+ }
+ .page-heading {
+  text-align: center;
+  color: #D6285E;
+  font-size: 2.125em;
+  opacity: 0.6;
+ }
+ .page-subheading {
+  text-align: center;
+  opacity: 0.25;
+  margin-bottom: 2.5em;
+ }
+
+ .landing .contact {
+  line-height: 0.65em;
+ }
+
+ .landing {
+  margin-bottom: 4em;
+ }
+ .landing .contacts {
+  margin-top: 3em;
+  width: 150px;
+  display: inline-block;
+ }
+ .landing .downloads {
+    /*padding-left: 55%;*/
+  margin: 3em 0;
+  display: inline-block;
+  float: right;
+  width: 54%;
+ }
+ .download {
+  background-image: url('icon-om-64.png');
+  background-repeat: no-repeat;
+  padding-left: 90px;
+ }
+ .details {
+  display: inline-block;
+ }
+ .details h2 {
+  margin-top: 15px;
+ }
+ .research-visual{
+  width: 100%;
+  height: 325px;
+  background-color: gray;
+ }
+ .center-image {
+  text-align: center;
+  margin: 10em 0 2.5em;
+ }
+ .center-image img {
+  width: 250px;
+ }
+ .research a div {
+  display: inline;
+ }
