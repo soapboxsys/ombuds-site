@@ -105,8 +105,12 @@ body{
  .download {
   background-image: url('../icon-om-64.png');
   background-repeat: no-repeat;
-  padding-left: 90px;
-  height: 70px;
+  padding: 10px 0 10px 90px;
+  background-position-y: 15px;
+ }
+ .download:first-of-type {
+ 	padding-top: 0;
+ 	background-position-y: 0;
  }
  .details {
   display: inline-block;
@@ -127,5 +131,11 @@ body{
   width: 250px;
  }
  .research a div {
-  display: inline;
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  margin-left: -15%;
+  padding-left: 50%;
+  padding-top: 5%;
  }
+
