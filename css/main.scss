@@ -69,7 +69,7 @@ body{
  }
  .trigger a {
   padding: 0 5px;
-  font-size: 12px;
+  font-size: 14px;
  }
  .page-heading {
   text-align: center;
@@ -91,26 +91,32 @@ body{
   margin-bottom: 4em;
  }
  .landing .contacts {
-  margin-top: 3em;
+  margin-top: 7%;
   width: 150px;
   display: inline-block;
+  font-size: 14px;
  }
  .landing .downloads {
     /*padding-left: 55%;*/
-  margin: 3em 0;
+  margin: 6% 0;
   display: inline-block;
   float: right;
   width: 54%;
+  font-size: 15px;
  }
  .download {
   background-image: url('../icon-om-64.png');
   background-repeat: no-repeat;
-  padding: 10px 0 10px 90px;
+  background-size: 40px;
+  padding: 5px 0 0 70px;
   background-position-y: 15px;
  }
  .download:first-of-type {
  	padding-top: 0;
  	background-position-y: 0;
+ }
+ .download:last-of-type{
+  background-position-y: 5px;
  }
  .details {
   display: inline-block;
@@ -125,17 +131,28 @@ body{
  }
  .center-image {
   text-align: center;
-  margin: 10em 0 2.5em;
+  margin: 25% 0 2.5em;
  }
  .center-image img {
-  width: 250px;
+  width: 175px;
  }
  .research a div {
-  display: inline-block;
+/*  display: inline-block;
   width: 30%;
   text-align: center;
   margin-left: -15%;
   padding-left: 50%;
-  padding-top: 5%;
+  padding-top: 5%;*/
+	display: block;
+	width: 30%;
+	padding: 4% 1%;
+	background-color: #D6285E;
+	color: darkgray;
+	margin: 1% 0;
+	text-align: center;
+
  }
 
+.details strong {
+	color: gray !important;
+}
