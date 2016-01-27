@@ -83,6 +83,12 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
+    cursor: default;
+}
+
+h2 {
+    opacity: 0.25;
+    color: $hover-color;
 }
 
 /**
@@ -91,6 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-size: 1em;
     color: $text-color;
+    cursor: default;
 }
 
 /**
