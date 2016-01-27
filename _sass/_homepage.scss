@@ -1,0 +1,57 @@
+  .landing{
+    height: 100vh;
+    
+    .main-view{
+      height: 55.5vh;
+      text-align: center;
+      h1 {
+        visibility: hidden;
+        display: none;
+      }
+      .ombuds{
+        margin-top: 18vh;
+        font-size: 1.5em;
+        width: 23.75%;
+      }
+    }
+    h2 {
+      margin-top: 3vh;
+    }
+    .calls-to-action div {
+      display: inline-table;
+      margin: 0;
+      padding: 0;
+    }
+    .contacts{
+      width: 47%;
+      .contact{
+        margin-bottom: 0;
+      }
+    }
+    .contributes{
+      width:52%;
+      .contribute{
+        background: url('../icon-om-64.png') 0 no-repeat;
+        background-size: 10%;
+        padding: 5px 0 0 65px;
+      }
+    }
+    &:hover .contribute{
+      cursor: pointer;
+      color: $hover-color;
+    }
+  }
+  .details{
+    margin-bottom: 10vh;
+    canvas {
+      height: 130px;
+      width: 100%;
+      background-color: #fff; 
+  }
+  .research {
+    svg {
+
+    }
+  }
+
+  }
