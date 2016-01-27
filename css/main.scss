@@ -14,16 +14,17 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$text-color:       darkslategray;
 $background-color: #fdfdfd;
 $brand-color:      #D6285E;
+$hover-color:      #808080;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    850px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
@@ -49,110 +50,7 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
-;
+        "syntax-highlighting",
+        "homepage"
+;   
 
-
-body{
-  background-color: #FFFFF3;
- }
- h2 {
-  color: #808080;
- }
- p{
-  color: gray;
- }
-
- a, strong {
-  color: #D6285E !important;
-  /*opacity: 0.5 !important;*/
- }
- .trigger a {
-  padding: 0 5px;
-  font-size: 14px;
- }
- .page-heading {
-  text-align: center;
-  color: #D6285E;
-  font-size: 2.125em;
-  opacity: 0.6;
- }
- .page-subheading {
-  text-align: center;
-  opacity: 0.25;
-  margin-bottom: 2.5em;
- }
-
- .landing .contact {
-  line-height: 0.65em;
- }
-
- .landing {
-  margin-bottom: 4em;
- }
- .landing .contacts {
-  margin-top: 7%;
-  width: 150px;
-  display: inline-block;
-  font-size: 14px;
- }
- .landing .downloads {
-    /*padding-left: 55%;*/
-  margin: 6% 0;
-  display: inline-block;
-  float: right;
-  width: 54%;
-  font-size: 15px;
- }
- .download {
-  background-image: url('../icon-om-64.png');
-  background-repeat: no-repeat;
-  background-size: 40px;
-  padding: 5px 0 0 70px;
-  background-position-y: 15px;
- }
- .download:first-of-type {
- 	padding-top: 0;
- 	background-position-y: 0;
- }
- .download:last-of-type{
-  background-position-y: 5px;
- }
- .details {
-  display: inline-block;
- }
- .details h2 {
-  margin-top: 15px;
- }
- .research-visual{
-  width: 100%;
-  height: 325px;
-  background-color: gray;
- }
- .center-image {
-  text-align: center;
-  margin: 25% 0 2.5em;
- }
- .center-image img {
-  width: 175px;
- }
- .research a div {
-/*  display: inline-block;
-  width: 30%;
-  text-align: center;
-  margin-left: -15%;
-  padding-left: 50%;
-  padding-top: 5%;*/
-	display: block;
-	width: 30%;
-	padding: 4% 1%;
-	background-color: #D6285E;
-	color: darkgray;
-	margin: 1% 0;
-	text-align: center;
-
- }
-
-.details strong {
-	color: gray !important;
-}

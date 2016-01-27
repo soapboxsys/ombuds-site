@@ -76,6 +76,9 @@
         .trigger {
             clear: both;
             display: none;
+              a {
+                padding: 0 5px !important;
+              }
         }
 
         &:hover .trigger {
