@@ -46,7 +46,7 @@
   .details{
     margin-bottom: 25vh;
     canvas {
-      height: 130px;
+      height: 100px;
       width: 100%;
       background-color: #fff; 
     }
@@ -62,7 +62,7 @@
     .fn-show{
       display:inherit;
     }
-    .fn-s-1, .fn-s-2, .fn-s-3{
+    .fn-s-1, .fn-s-2, .fn-s-3, .fn-s-4{
       &:hover{
         text-decoration: underline;
       }
