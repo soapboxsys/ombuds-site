@@ -36,9 +36,11 @@
         padding: 5px 0 0 65px;
       }
     }
-    &:hover .contribute{
-      cursor: pointer;
-      color: $hover-color;
+    .contribute{
+      &:hover {    
+        cursor: pointer;
+        color: $hover-color;
+      }
     }
   }
   .details{
@@ -57,9 +59,18 @@
       margin-left: -1em;
       vertical-align: top;
     }
+    .fn-show{
+      display:inherit;
+    }
+    .fn-s-1, .fn-s-2, .fn-s-3{
+      &:hover{
+        text-decoration: underline;
+      }
+    }
   }
   .research {
-    svg {
-
+    canvas {
+    height:  500px;
+    width:  100%;
     }
   }

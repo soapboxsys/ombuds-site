@@ -23,33 +23,47 @@ layout: default
 </section>
 <section class="details">   
     <h2>Peer-to-Peer</h2>
-    <p><strong>Ombuds</strong> uses the <strong>Bitcoin</strong> peer-to-peer protocol. As a Bitcoin <strong>epiphyte</strong><sup>1</sup>, Ombuds lives in and throughout the Bitcoin network, but doesn't interfere with the larger Bitcoin ecosystem. Ombuds is well researched, extensively tested, and trusted by organizations and individuals.</p>
-    <p class="footnote">
-      <sup class="footnote footnote-sup">1</sup>
-      definition of epiphyte
+    <p><strong>Ombuds</strong> uses the <strong>Bitcoin</strong> peer-to-peer protocol. As a Bitcoin <strong class="fn-s-1">epiphyte</strong><sup class="fn-s-1">1</sup>, Ombuds lives in and throughout the Bitcoin network, but doesn't interfere with the larger Bitcoin ecosystem. Ombuds is well researched, extensively tested, and trusted by organizations and individuals.</p>
+    <p class="footnote fn-1">
+      <sup class="footnote-sup">1</sup>
+      Ep-i-phyte <i>noun</i></br>
+      a plant that grows on another plant but is not parasitic, such as ferns growing on trees in tropical rain forests.
+
     </p>
-    <canvas class="footnote"></canvas>
+    <canvas class="footnote fn-1"></canvas>
     <h2>Immutable</h2>
     <p>
-      <strong>Ombuds</strong> enables any holder of Bitcoin to publish <strong>immutable statements</strong> within Bitcoin's block chain. These statements, which we call bulletins, are encoded within Bitcoin transactions which can be sent from a smartphone or a computer. If a Bitcoin user can get a transaction into the block chain it is <strong>effectively permanent</strong>.<sup>2</sup>
+      <strong>Ombuds</strong> enables any holder of Bitcoin to publish <strong>immutable statements</strong> within Bitcoin's block chain. These statements, which we call bulletins, are encoded within Bitcoin transactions which can be sent from a smartphone or a computer. If a Bitcoin user can get a transaction into the block chain it is <strong class="fn-s-2">effectively permanent</strong>.<sup class="fn-s-2">2</sup>
     </p>
-    <p class="footnote">
+    <p class="footnote fn-2">
       <sup class="footnote-sup">2</sup>
-      To censor a user's bulletins, an attacker must either block access to Bitcoin completely or generate blocks faster than the entire honest network. Since most small nations do not have the hashing infrastructure to mount a 51% attack against the Bitcoin network, Ombuds's method for storing bulletins is <strong>robust</strong>.<sup>3</sup>
+      To censor a user's bulletins, an attacker must either block access to Bitcoin completely or generate blocks faster than the entire honest network. Since most small nations do not have the hashing infrastructure to mount a 51% attack against the Bitcoin network, Ombuds's method for storing bulletins is <strong class="fn-s-3">robust</strong>.<sup class="fn-s-3">3</sup>
     </p>
-    <p class="footnote">
-      <sup class="footnote-sup" >3</sup>
+    <p class="footnote fn-3">
+      <sup class="footnote-sup">3</sup>
       This system does not depend on the honesty or availability of any single website, service or hard drive. Instead, Ombuds relies on the <strong>global and public distribution</strong> of the block chain to ensure the availability of its public record.
     </p>
 </section>
 <section class="research">
     <h2>Research Driven</h2>
     <p>Funding from <strong><a href="http://knightfoundation.org/">The Knight Foundation</a></strong></p>
-    <svg>
-    </svg>
     <div class="research-visual"></div>
     <a href="/research/"><div>Read our Research Paper</div></a>
+    <!-- <a href="/specification/"><div>Read our specification</div></a> -->
+    <a href="https://github.com/soapboxsys"><div>Download our mobile app</div></a>
     <a href="/specification/"><div>Read our specification</div></a>
-    <a href="https://github.com/soapboxsys"><div>Browse our Code</div></a>
+    <canvas>
+    </canvas>
     <p>Various questions regarding security and governemnt tracking of users who visit our websites are addressed <strong>here</strong>. Various questions regarding how Bitcoin works and our influences are addressed <strong>here</strong>. Various questions regarding Ombuds, our software, our team, and our reasons for doing this are addressed <strong>here</strong>.</p>
 </section>
+<script type="text/javascript">
+  function footnotes(fn){
+    $('.fn-s-'+fn).on('click',function(){$('.fn-'+fn).slideToggle('slow');});
+  }
+
+  $(document).ready(function(){
+    footnotes('1');
+    footnotes('2');
+    footnotes('3');
+  })
+</script>
