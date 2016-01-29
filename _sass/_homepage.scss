@@ -42,16 +42,24 @@
     }
   }
   .details{
-    margin-bottom: 10vh;
+    margin-bottom: 20vh;
     canvas {
       height: 130px;
       width: 100%;
       background-color: #fff; 
+    }
+    .footnote{
+      opacity: 0.5;
+      padding: 1.125em 0 0;
+      display: none
+    }
+    .footnote-sup{
+      margin-left: -1em;
+      vertical-align: top;
+    }
   }
   .research {
     svg {
 
     }
-  }
-
   }
