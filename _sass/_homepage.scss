@@ -70,7 +70,21 @@
   }
   .research {
     canvas {
-    height:  500px;
-    width:  100%;
+      height:  500px;
+      width:  100%;
+    }
+    .footnote{
+      opacity: 0.5;
+      padding: 1.125em 0 0;
+      display: none
+    }
+    .footnote-sup{
+      margin-left: -1em;
+      vertical-align: top;
+    }
+    .fn-s-5{
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
