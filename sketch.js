@@ -3,6 +3,12 @@ var ob = 13;
 var counter = 0;
 var pcounter = -1;
 
+$(document).ready(function(){
+	$('.fn-s-1').on('click', function(){
+		loop();
+	});
+});
+
 function setup() {
   var myCanvas = createCanvas(800, 125);
   myCanvas.parent('epiphyte');
@@ -12,6 +18,7 @@ function setup() {
 	ombuds.push(new Slide());
   } 
   frameRate(45);
+  noLoop();
 }
 
 
