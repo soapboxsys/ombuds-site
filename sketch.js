@@ -1,5 +1,7 @@
-var ombuds = []; 
-var ob = 13;
+var ombuds = [];
+var ob = 7;
+var bitcos = [];
+var bc = 10;
 var counter = 0;
 var pcounter = -1;
 
@@ -16,6 +18,9 @@ function setup() {
   fill(counter);
   for(var i = 0; i<ob; i++){
 	ombuds.push(new Slide());
+  }
+  for(var i = 0; i<bc; i++){
+		bitcos.push(new Slide());
   } 
   frameRate(45);
   noLoop();
@@ -23,13 +28,19 @@ function setup() {
 
 
 function draw() {
-  background(245,1);
-  for(var i = 0; i< ob; i++){
-  	ombuds[i].move();
-	ombuds[i].display();
-  }
+  background(245,3);
   fill(140);
   stroke(140);
+  for(var i = 0; i< bc; i++){
+  	bitcos[i].move();
+		bitcos[i].display();
+  }
+  fill('#D6285E');
+  stroke(140,0,0);
+  for(var i = 0; i< ob; i++){
+  	ombuds[i].move();
+		ombuds[i].display();
+  }
 }
 
 
