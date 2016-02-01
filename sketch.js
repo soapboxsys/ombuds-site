@@ -22,13 +22,13 @@ function setup() {
   for(var i = 0; i<bc; i++){
 		bitcos.push(new Slide());
   } 
-  frameRate(45);
+  frameRate(23);
   noLoop();
 }
 
 
 function draw() {
-  background(245,3);
+  background(253,3);
   fill(140);
   stroke(140);
   for(var i = 0; i< bc; i++){
