@@ -1,7 +1,5 @@
-<!-- title: Test Data -->
-
-Test Data ... for your viewing pleasure
-=======================================
+DD09 Test Data 
+==============
 
 Two data sets follow: *valid records* and *invalid records*.
 Explanations of each case will be succint. Enjoy!
@@ -263,12 +261,14 @@ Valid Records
         (2) less than 80 bytes in total length
 
 
-Invalid Records
----------------
-special characters
-missing data 
-header type does not correspond to record type
-header length does not correspond to record len
-out of order enodings
-greater than 75 kilobytes
-impossible endorsements?
+## Invalid Records
+
+Can come in many forms, thus far we have encountered the following cases:
+
+- special characters
+- missing data 
+- header type does not correspond to record type
+- header length does not correspond to record len
+- out of order enodings
+- greater than 75 kilobytes
+- impossible endorsements

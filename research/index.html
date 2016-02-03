@@ -1,0 +1,69 @@
+---
+title: research
+layout: default
+---
+<ul>
+    {% for post in site.posts %}
+    <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
+
+
+<h2>Ombuds: A Public Space With a Single Shared History</h2>
+
+<a href="/res/ombuds-public-space.pdf">
+    <img id="paperImg" src="/res/paper.png" />
+</a>
+
+<div id="paperPreview">
+    <p>
+    <a href="http://kuck.io">Alex Kuck</a> and <a href="http://nskelsey.com">Nick Skelsey</a> produced this paper as a senior thesis under the guidance of <a href="http://www.cs.virginia.edu/~evans/">Dave Evans</a> and advice of <a href="https://www.cs.virginia.edu/~shelat/">abhi shelat</a>.
+    </p>
+
+    <h3>Abstract</h3>
+    <p>
+    Recent approaches to resisting censorship on the Internet have focused on restoring access to services that have been blocked. These services, including social media and web forums, provide platforms for activists to spread information to the general public, but the services themselves are subject to manipulation and control. Instead of taking this approach, we have created a resilient platform to share and disseminate information over the Internet without a central authority. Our application, Ombuds, does this by distributing public statements through a peer-to-peer network and storing those statements in a single shared history.
+    </p>
+    <p>
+    This tool leverages Bitcoin's network and Bitcoin's block chain. With our software, a connection to the Bitcoin network, and a small amount of bitcoin, activists can store controversial public statements in a highly reliable and permanent place. This paper describes the design of the system, potential attacks against it, and approaches to scaling the system in terms of cost and resource usage.
+    </p>
+
+</div>
+
+<h4 id="dlWrap"><a class="big-link" href="/res/ombuds-public-space.pdf">Download Paper</a><img id="adobeImg" src="/res/adobepdf.png" /></h4>
+
+<h3>Prior Work</h3>
+
+<p>
+There are quite a few projects from which we have taken ideas, concepts, and source code -- legally.
+The big ones are:
+</p>
+
+<ul>
+    <li><a href="http://enetium.com/resources/Thesis.pdf">(Ab)using Bitcoin for an Anti-Censorship Tool</a>
+    <p>Krzystof created a specificiation of Bitcoin and analyzed the relative costs of storing data in Bitcoin's block chain.</p>
+    </li>
+    <li><a href="https://github.com/btcsuite/btcd">Btcd</a>
+    <p>The developers at Conformal have developed some awesome bitcoin libraries. We have used them extensively.</p>
+    </li>
+    <li><a href="https://bitchirp.org/">Bitchirp</a>
+    <p>The original distributed version of twitter.</p>
+    </li>
+    <li>
+    <a href="https://github.com/Bitmessage/PyBitmessage">Bitmessage</a>
+    <p>Another messaging tool that encrypts messages preflight.</p>
+    </li>
+    <li><a href="http://counterparty.io/">CounterParty</a>
+    <p>Our bitcoin daemon and database schema was inspired by the schema PhantomPhreak created for CounterParty.</p>
+    </li>
+    <li><a href="http://www.proofofexistence.com/">Proof of Existence</a>
+    <p>The first tool we were aware of that uses the blockchain for its distrbuted timestamp and data storage.</p>
+    </li>
+    <li><a href="https://github.com/miguelfreitas/twister-core">Twister</a>
+    <p>The intended use case of this project and ours is similar. We elected to use bitcoin's infrastructure intead of setting up our own. But if this project has interested you, then Twister should as well.
+    </p>
+    </li>
+
+</ul>

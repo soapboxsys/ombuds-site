@@ -121,26 +121,28 @@ An example of the total payload encoded in hex follows this format:
                              |        txid          | ts 
 
 An endorsement can either be encoded in transactions in several ways.
-Parsers will look for endorsements in all of the valid encoding formats as described in the [Encoded Message Formats of DD05](/encode-formats).
+Parsers will look for endorsements in all of the valid encoding formats as described in the [Encoded Message Formats of DD05](/spec/encode-formats).
 Since endorsements are less than 40 bytes in size, the reference implementation will place endorsements in OP_RETURN outputs.
 
 ## 3. Public Record Schema
 
 An endorsement will be stored in the public record alongside bulletins by full nodes maintaining copies of the public record.
 The SQL schema is the same as the protocol buffer format except for one notable addition.
-An author field is included which is the Bitcoin address of the transactions first signing input as described in [DD02](/author)
+An author field is included which is the Bitcoin address of the transactions first signing input as described in [DD02](/spec/author)
 
     CREATE TABLE endorsements (
-        txid        TEXT, -- the enclosing transactions SHA hash
-        bid         TEXT, -- the endorsed bulletins SHA hash
-        timestamp   INT,  -- Unix time
-        author      TEXT, -- formatted as a bitcoin address.
+        txid        TEXT NOT NULL, -- the enclosing transactions SHA hash
+        block       TEXT NOT NULL, -- the containing block hash
+        bid         TEXT NOT NULL, -- the endorsed bulletins SHA hash
+        timestamp   INT NOT NULL,  -- Unix time
+        author      TEXT NOT NULL, -- formatted as a bitcoin address.
 
-        FOREIGN KEY(bid) REFERENCES bulletins(txid),
         PRIMARY KEY(txid)
+        FOREIGN KEY(block) REFERENCES blocks(hash) ON DELETE CASCADE
     );
 
-[Source](https://github.com/soapboxsys/ombudslib/blob/master/protocol/schema.sql)
+
+[Source](https://github.com/soapboxsys/ombudslib/blob/master/pubrecdb/schema.sql)
 
 ## 4. JSON Schema
 

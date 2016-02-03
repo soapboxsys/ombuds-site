@@ -1,7 +1,5 @@
-<!-- title: Versioning -->
-
-Design Document Versioning // DRAFT
---------------------------
+DD00 Design Document Versioning // DRAFT
+=======================================
 
 The documents contained on specify intended program behaivor, because the documents themselves are changing things themselves it is useful to label them.
 The label scheme is simple. Each document proceeds in order from Draft --> Revision --> Implemented. 

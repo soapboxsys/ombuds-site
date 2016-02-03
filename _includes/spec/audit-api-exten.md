@@ -1,10 +1,7 @@
-<!-- title: Audit Extension -->
+DD08 An Auditable Public API Extension // DRAFT
+==============================================
 
-An Auditable Public API Extension // DRAFT
----------------------------------
-
-Overview
-========
+## Overview
 The goal of this document is to describe the auditing process and the relevant aspects of a system that verifies that a web server is faithfully serving public statements included in a block chain. 
 The reference implementation along with demonstrative test cases of the API will be available [here](https://github.com/soapboxsys/ombudslib).
 
@@ -13,25 +10,23 @@ The goal of providing public auditing is to give clients that consume a third pa
 The tangible goal is to remove some of the attacks a malicious API server can mount against a client.
 While not providing anonymity, this extension lets clients prove to themselves and others that the API server is not manipulating records.
 
-Status of This Document
-=======================
+## Status of This Document
 This is the initial discussion of a design that is subject to change. 
 While this is not an RFC, the intention behind this document is to describe the extension completely so that it is reproducible and well understood.
 
 Nick -- September 2015
 
-Contents
-========
-1. Definitions
-2. Requirements
-    1. Server Descriptions
-    2. Client Descriptions
-3. Signatures
-4. Inclusion Proofs
-5. Managing Certificates
-6. Disclaimer
+## Contents
+    1. Definitions
+    2. Requirements
+      2.1 Server Descriptions
+      2.2 Client Descriptions
+    3. Signatures
+    4. Inclusion Proofs
+    5. Managing Certificates
+    6. Disclaimer
 
-### Definitions
+## 1. Definitions
 
 Throughout this document the term `record` is used regularly. 
 A record defined here is a single public statement that has been included in the block chain.
@@ -39,14 +34,14 @@ As of September 2015, the Ombuds protocol defines two types of records: bulletin
 The schemas of these records and their encodings can be found in [section 2.7.4 record formats of DD01](https://github.com/soapboxsys/ombudslib).
 
 
-### Introduction
+###  Introduction
 A simple read-only HTTP JSON API server produces responses that contain data to clients that request it.
 In this traditional setup, the client is dependent on the server honestly sending data.
 If the server operator has malicous intent, he can manipulate existing data, fake the existence of data, or withhold data.
 While the auditing system discussed below cannot hold an API server accountable for witholding data, its explicit purpose is to prevent an API server from faking or systematically changing the content of records stored in the public record.
 
 
-### Requirements
+## 2. Requirements
 
 To prevent the manipulation of data  from occuring on servers running Ombud's API, it is nessecary to require three things of API servers and four things of API clients.
 

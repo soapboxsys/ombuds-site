@@ -1,6 +1,4 @@
-<!-- title: Web Relay Spec -->
-
-Web Relay API Design Description // DRAFT
+DD07 Web Relay API Design Description // DRAFT
 ================================
 
 Overview
@@ -60,7 +58,7 @@ To that end it must support thousands of simulataneous clients while remaining:
 - Secure
 - Available
 - Performant
-- Auditable (planned & described in [DD04](/audit-api)
+- Auditable (planned & described in [DD06](/spec/audit-api-exten))
 
 ## 4. Available Records
 
@@ -120,9 +118,9 @@ The available query parameters further restrict API behaivor.
 
 For queries that request single elements the schema is straight forward.
 
-`/endo/txid]` returns a single endorsement that conforms to [section 3a of DD03](/endorsement).
+`/endo/txid]` returns a single endorsement that conforms to [section 4. of DD04](/spec/endorsement#4).
 
-`/bltn/[txid]` returns a bulletin conforming to the schema described in section [2.5 JSON Schema of DD02](/bulletin) with one additional field.
+`/bltn/[txid]` returns a bulletin conforming to the schema described in section [3. JSON Schema of DD03](/spec/bulletin#3) with one additional field.
 That field is the list of endorsements for that bulletin.
 
     {
@@ -298,7 +296,7 @@ The second method relies on a trusted checkpoint or a friends application data t
 While we don't endorse this method of setting up an API.
 We will be distributing a bootstrap file for Bitcoin's Testnet, so that folks can test their deployments of the server API before running the real thing.
 That bundle of bootstrap data will be released with new versions of the software.
-The process is decribed further in [section 7.2]().
+The process is decribed further in [section 4 of DD01](/spec/public-record).
 
 ### 6.3 Protecting Users
 

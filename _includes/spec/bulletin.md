@@ -7,7 +7,7 @@ Overview
 --------
 
 A bulletin is the name for a public statement - generically called a record - containing a text message, a timestamp, and optionally a location.
-A bulletin's author is attributed to a public key according to [DD02](/author).
+A bulletin's author is attributed to a public key according to the [author definition](/spec/author).
 For a bulletin to be considered part of the public record it must be included in Bitcoin's block chain.
 The contents below describe the valid formats a bulletin can take.
 
@@ -31,7 +31,7 @@ Contents
 
 A bulletin is defined as a Bitcoin transaction that contains the following protocol buffer in a series of data carrying outputs.
 A bulletin can be encoded in a bitcoin in several ways. 
-A parser will look for the message in various encoding formats as described in [Encoded Message Formats of DD05](/encode-formats).
+A parser will look for the message in various encoding formats as described in [Encoded Message Formats of DD05](/spec/encode-formats).
 
      message WireBulletin {
              required string message     = 1;
@@ -53,4 +53,4 @@ The SQL schema for a bulletin can be found at its [source](https://github.com/so
 
 ## 3. JSON Schema
 
-The fields of a bulletin encoded in JSON is fully specified in [bulletin.go](https://github.com/soapboxsys/ombudslib/blob/master/ombjson/responses.go)
+The fields of a bulletin encoded in JSON is fully specified in [responses.go](https://github.com/soapboxsys/ombudslib/blob/master/ombjson/responses.go)

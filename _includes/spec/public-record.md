@@ -1,4 +1,3 @@
-<!-- title: Public Record -->
 DD01 Public Record Specification // REV-01
 ================================
 
@@ -39,10 +38,11 @@ Nick, Kenneth -- Jan 5, 2015
 
 ## 1. Definition
 
-The public record is comprised of all *records* – [bulletins](/bulletin) and [endorsements](/endorsement) – [encoded](/record-encoding-formats) within bitcoin transactions that have four or more confirmations.  
+The public record is comprised of all *records* – [bulletins](/spec/bulletin) and [endorsements](/spec/endorsement) – [encoded](/spec/encode-formats) within bitcoin transactions that have four or more confirmations.  
 
    
 ## 2. Behavior
+
 ### 2.1 Eventual Consistency
 
 To ensure that nodes agree to the state of the public record, only records that have more than **four** confirmations are marked as committed to the record.

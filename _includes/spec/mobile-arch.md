@@ -1,6 +1,4 @@
-<!-- title: Mobile Architecture -->
-
-Mobile Architecture Design
+DD06 Mobile Architecture Design
 ========================== 
 
 Overview
