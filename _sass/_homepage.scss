@@ -63,8 +63,12 @@
       display:inherit;
     }
     .fn-s-1, .fn-s-2, .fn-s-3, .fn-s-4{
+      text-decoration: underline;
       &:hover{
-        text-decoration: underline;
+
+      }
+      sup{
+      text-decoration: none;
       }
     }
   }
@@ -82,9 +86,26 @@
       margin-left: -1em;
       vertical-align: top;
     }
-    .fn-s-5{
+    .fn-s-3{
+      text-decoration: underline;
       &:hover{
-        text-decoration: underline;
+      }
+      sup {
+        text-decoration: none;
       }
     }
+    button{
+      display: inline;
+      width: 31%;
+      text-align: center;
+      vertical-align: text-bottom;
+      height: 5em;
+      font-size: 1.125em;
+      margin: 2em 0;
+    }
+    button:hover {
+      background-color: lightgray;
+      border-color: #961c42;
+    }
   }
+

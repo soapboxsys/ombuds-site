@@ -17,7 +17,7 @@ function setup() {
   stroke(counter); 
   fill(counter);
   for(var i = 0; i<ob; i++){
-	ombuds.push(new Slide());
+		ombuds.push(new Slide());
   }
   for(var i = 0; i<bc; i++){
 		bitcos.push(new Slide());
