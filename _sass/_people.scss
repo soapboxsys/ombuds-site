@@ -1,0 +1,96 @@
+article.people {
+    h2 {
+        margin-bottom: 25px;  
+        margin-top: 10px;  
+  } 
+
+  div.about {
+      height: 182px;
+  }
+}
+
+div.headshot img {
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+}
+
+div.headshot {
+    float: left;
+    height: 150px;
+}
+
+div.text {
+    margin-left: 40px;
+    float: left; 
+    width: 80%;
+}
+
+div.text code {
+    font-size: 16px
+}
+
+div.text p.links a {
+    margin: 0 25px;
+}
+
+div.text p.links :first-child {
+    margin-left: 0;
+}
+
+div.text p.links :last-child {
+    display: none;
+}
+
+/* Advisors styles */
+div.row-adv-imgs div {
+    display: inline-block; 
+    width: 190px;
+    height: 190px;
+}
+
+div.row-adv-imgs h4 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+div.row-adv-imgs p {
+    text-align: center;
+}
+
+div.row-adv-imgs img {
+    margin: 20px auto 0 auto;
+    display: block;
+}
+
+
+/* Organization styles */
+div.org-imgs {
+     position: relative;
+     height: 140px;
+}
+
+div.org-imgs.last {
+    height: 90px;
+}
+
+div.org-imgs div {
+    margin: 10px 30px;
+    display: inline-block;
+}
+
+div.org-imgs img,
+div.row-adv-imgs img {
+    height: auto;
+    width: 85px;
+    vertical-align: middle;
+ }
+
+ div.org-imgs a:hover {
+     border-bottom: none;     
+ }
+
+ #knight-logo {
+     height: 45px;
+     width: auto;
+ }
