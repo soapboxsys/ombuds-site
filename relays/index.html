@@ -1,0 +1,35 @@
+---
+title: Web Relays
+layout: default
+---
+<h1>Live Web Relays</h1>
+<p>
+Use any one of the web-relays below to browse content stored in the public record.
+<a href="{{ site.github_url }}/graphs/contributors">The maintainers</a> 
+of this website personally vet the operators of the relays listed here.
+If you notice any problems with a relay <a href="{{ site.github_url }}/issues">create an issue</a> 
+online or post a bulletin about it into the public record.
+</p>
+
+<div class="relay-list">
+{% for relay in site.data.relays %}
+    <div class="relay-item">
+        <img class="prof-pic" src="/res/relays/{{ relay.img }}" />
+        <div class="top-line">
+            <span><a class="hostname" href="{{ relay.hostname }}" >{{ relay.hostname }}</a></span>
+            <img class="alt-arrow" src="/res/alt-name-arrow.png" />
+            <!-- This needs to be a dropdown -->
+            <span>Launched: {{ relay.startDate }}</span>
+        </div>
+        <div class="bot-line">
+            Hosted in {{ relay.serviceProvider }}
+            {% if relay.torHSAddr %}
+            <span class="opt-tor-hs-addr">
+                Tor HS Address: <a href="{{ relay.torHSAddr }}">{{ relay.torHSAddr }}</a>
+            </span>
+            {% endif %}
+        </div>
+    </div>
+{% endfor %}
+</div>
+

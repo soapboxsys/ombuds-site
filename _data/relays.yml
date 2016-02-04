@@ -1,0 +1,13 @@
+- hostname: 'https://relay.nskelsey.com'
+  alt_urls: 
+    - 'https://relay.soapbox.systems'
+    - 'http://54.32.23.12'
+  startDate: "2/4/2016"
+  serviceProvider: "Amazon's Cloud"
+  torHSAddr: "http://3g2upl4pq6kufc4m.onion/"
+  img: "nick-img.png"
+- hostname: 'https://web.kuck.io'
+  startDate: "2/5/2016"
+  serviceProvider: "Someone's basement"
+  img: "alex-img.png"
+
