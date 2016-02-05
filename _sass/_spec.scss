@@ -1,5 +1,17 @@
 section.spec {
+	h1 {
+		opacity: 0.5;
+  	color: #808080;
+  	font-size: 2em;
+	}
 	h2 {
-		/*color: $brand-color;*/
+		padding: 2.5em 0 0.25em;
+		margin-bottom:	0;
+	}
+	dt {
+		padding-top: 0.75em;
+	}
+	dd {
+		padding-left: 1em;
 	}
 }

@@ -35,7 +35,6 @@ Future Work
 [Publicly Auditable API](audit-api-exten) DD08
 :   A draft of an extension for the web relay API that lets clients audit the servers they rely on.
 
----------------------
 
 Meta
 ----

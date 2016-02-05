@@ -67,9 +67,9 @@
       &:hover{
 
       }
-      sup{
+    }
+    sup.fn-s-1, sup.fn-s-2, sup.fn-s-3{
       text-decoration: none;
-      }
     }
   }
   .research {
@@ -99,9 +99,10 @@
       width: 31%;
       text-align: center;
       vertical-align: text-bottom;
-      height: 5em;
-      font-size: 1.125em;
+      font-size: 1em;
       margin: 2em 0;
+      padding: 1em;
+
     }
     button:hover {
       background-color: lightgray;
