@@ -16,21 +16,19 @@ section.spec {
 	}
 }
 .mv2{
-  height: 48vh !important;
+  height: 53vh !important;
 }
 .subnav {
   text-align: center;
 }
 .subnav button{
-  width: 19%;
+  width: 25%;
   padding: 1em;
+  margin: 1% 0;
   font-size: 1em;
   opacity: 0.5;
 }
 .subnav button:hover{
   background-color: lightgray;
   border-color: darkslategray;
-}
-#interactive-wrapper{
-  text-align: center;
 }

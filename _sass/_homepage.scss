@@ -99,14 +99,17 @@
       width: 31%;
       text-align: center;
       vertical-align: text-bottom;
-      font-size: 1em;
       margin: 2em 0;
+      font-size: 1em;
       padding: 1em;
-
+      opacity:0.5;
     }
     button:hover {
       background-color: lightgray;
-      border-color: #961c42;
+      border-color: darkslategray;
+    }
+    form {
+      display: inline;
     }
   }
 

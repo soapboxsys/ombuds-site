@@ -5,13 +5,11 @@
     <h2 class="page-subheading home">A <strong>peer to peer</strong>, <strong>immutable</strong> microblog.</h2>
   </div>
   <div class="subnav">
-    <button id="home">home</button>
-    <button id="relay">relay</button>
-    <button id="spec">spec</button>
-    <button id="about">about</button>
-    <button id="language">language</button>
-  </div>
-  <div id="interactive-wrapper">
+    <form action="/"><button id="home">home</button></form>
+    <form action="/relay"><button id="relay">relay</button></form>
+    <form action="/spec"><button id="spec">spec</button></form>
+    <form action="/research"><button id="research">research</button></form>
+    <form action="/people"><button id="about">about</button></form>
   </div>
 </section>
 <script type="text/javascript">
@@ -21,9 +19,9 @@
     if(ps){
       $('#spec').css({
         "border-color":"darkslategray",
-        "background-color":"lightgray"
+        "background-color":"#959595"
       });
     }
   }); 
 </script>
-<script src="/spec.js"></script>
+<!-- <script src="/spec.js"></script> -->
