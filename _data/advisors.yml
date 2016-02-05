@@ -1,0 +1,19 @@
+- name: Andrew Montalenti
+  url: "http://pixelmonkey.org"
+  img_url: andrew.png
+  title: "CTO at Parse.ly"
+
+- name: Carol Van Cleef
+  url: "https://www.manatt.com/Carol-Van-Cleef/"
+  img_url: carol.png
+  title: "Manatt & Phelps"
+
+- name: Dave Evans
+  url: "http://www.cs.virginia.edu/~evans/"
+  img_url: evans.png
+  title: "Professor at U.Va."
+
+- name: Larry Mueller
+  url: ""
+  img_url: larry.png
+  title: "Associate Dean at U.Va."

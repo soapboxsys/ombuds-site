@@ -1,0 +1,70 @@
+---
+title: Key People
+layout: page
+---
+<article class="people">
+<h2>Contributors</h2>
+{% for person in site.data.contributors %}
+<div class="about">
+    <div class="headshot">
+        <img src="/res/images/contributors/{{ person.img }}" >
+    </div>
+    <div class="text">
+        <h3>{{ person.name }}</h3>
+        <p>{{ person.blurb }}</p>
+        <p class="links">
+            {% for link in person.ext_sites %}  
+            <a href="{{ link.url }}">{{ link.txt }}</a> <span>|</span>
+            {% endfor %}
+        </p>
+    </div>
+</div>
+{% endfor %}
+
+<h2>Advisors</h2>
+<div class="row-adv-imgs">
+    {% for person in site.data.advisors %}
+    <div>
+        <a href="{{ person.url }}">
+            <img src="/res/images/advisors/{{ person.img_url }}" />
+        </a>
+        <p>
+            <a href="{{ person.url }}" class="big-link">{{ person.name }}</a>
+        </p>
+        <p>{{ person.title }}</p>
+    </div>
+    {% endfor %}
+</div>
+
+
+
+<h2>Collaborators</h2>
+
+<p>
+We have recieved support of some kind or another from the great people within these organizations.
+Go check them out.
+</p>
+
+<div class="org-imgs">
+    <div>
+        <a href="http://hacdc.org">
+            <img src="/res/images/orgs/hacdc_logo.jpg" />
+        </a>
+    </div>
+    <div>
+        <a href="http://tomtomfest.com">
+            <img  src="/res/images/orgs/ttff.png" />
+        </a>
+    </div>
+    <div>
+        <a href="http://www.knightfoundation.org/grants/201551198/">
+            <img id="knight-logo" src="/res/images/orgs/knightfdn.jpg" />
+        </a>
+    </div>
+    <div>
+        <a href="http://hackcville.com">
+            <img src="/res/images/orgs/hackcville.png" />
+        </a>
+    </div>
+</div>
+</article>

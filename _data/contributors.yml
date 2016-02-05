@@ -1,0 +1,38 @@
+- name: "Alex Kuck"
+  img: alexk.png
+  blurb: "Alex is a mobile and web developer. He has worked on distributed networks by developing and maintaining various sensor networks in Charlottesville, including water quality testing of the Rivanna River and energy monitoring in low income homes."
+  ext_sites:
+    - url: "http://kuck.io"
+      txt: "Site"
+    - url: "https://github.com/alexkuck"
+      txt: "Github"
+    - url: "https://keybase.io/askuck"
+      txt: "Keybase"
+- name: "Alex Evans"
+  img: alexe.jpg
+  blurb: "Alex is a researcher with an interest in global development and European politics. He is an outspoken privacy advocate that runs an opinion-as-a-service operation in his free time."
+  ext_sites: 
+    - url: "https://alexevans.com"
+      txt: "Site"
+    - url: "https://google.com"
+      txt: "Keybase"
+- name: "Nick Skelsey"
+  img: "nick.png"
+  blurb: "Nick is a systems programmer. He has worked as a network engineer and frontend web developer at a few startups and on open source projects."
+  ext_sites:
+    - url: "http://nskelsey.com"
+      txt: "Site"
+    - url: "https://github.com/NSkelsey"
+      txt: "Github"
+    - url: "https://pgp.mit.edu/pks/lookup?op=vindex&search=0xDD773D6D7326078E"
+      txt: "PGP Key"
+- name: "Luke Demarest"
+  img: "luke.png"
+  blurb: "Luke studied fine art at Virginia Tech. He produces fine websites, fine art, and recently left the country following some bad luck in a billards house."
+  ext_sites:
+    - url: "http://demare.st"
+      txt: "Art?"
+    - url: "https://github.com/ldemarest"
+      txt: "Github"
+    - url: "https://twitter.com/lukedemarest"
+      txt: "Twitter"
