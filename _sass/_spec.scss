@@ -15,3 +15,22 @@ section.spec {
 		padding-left: 1em;
 	}
 }
+.mv2{
+  height: 48vh !important;
+}
+.subnav {
+  text-align: center;
+}
+.subnav button{
+  width: 19%;
+  padding: 1em;
+  font-size: 1em;
+  opacity: 0.5;
+}
+.subnav button:hover{
+  background-color: lightgray;
+  border-color: darkslategray;
+}
+#interactive-wrapper{
+  text-align: center;
+}
