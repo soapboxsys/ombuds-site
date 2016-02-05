@@ -6,18 +6,21 @@
   </div>
   <div class="subnav">
     <form action="/"><button id="home">home</button></form>
-    <form action="/relay"><button id="relay">relay</button></form>
+    <form action="/relays"><button id="relays">relay</button></form>
     <form action="/spec"><button id="spec">spec</button></form>
     <form action="/research"><button id="research">research</button></form>
-    <form action="/people"><button id="about">about</button></form>
+    <form action="/people"><button id="people">about</button></form>
   </div>
 </section>
 <script type="text/javascript">
   var pn = window.location.pathname;
-  var ps = /spec/.test(pn); 
+  pn = pn.replace(/\//g,'');
+  console.log(pn);
+  pn = $('#'+pn);
+
   $(document).ready(function(){
-    if(ps){
-      $('#spec').css({
+    if(pn.length > 0){
+      pn.css({
         "border-color":"darkslategray",
         "background-color":"#959595"
       });
