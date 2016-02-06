@@ -31,3 +31,15 @@ section.spec {
   background-color: lightgray;
   border-color: darkslategray;
 }
+
+
+
+@include media-query($on-palm) {
+	.mv2{
+	  height: 50vh !important;
+	}
+	.subnav button {
+	  width: 60%;
+	  padding: 0.5em;
+	}
+}
