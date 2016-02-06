@@ -34,7 +34,11 @@
     .menu-icon {
         display: none;
     }
-
+    .trigger {
+        a {
+            padding: 0 0.75em !important;
+        }
+    }
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
@@ -76,9 +80,6 @@
         .trigger {
             clear: both;
             display: none;
-            a {
-                padding: 0 5px;
-            }
         }
 
         &:hover .trigger {

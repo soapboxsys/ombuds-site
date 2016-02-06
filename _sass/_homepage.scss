@@ -31,7 +31,7 @@
     .contributes{
       width:52%;
       .contribute{
-        background: url('../icon-om-64.png') 0 no-repeat;
+        background: url('/res/icon-om-64.png') 0 no-repeat;
         background-size: 10%;
         padding: 5px 0 0 65px;
       }
@@ -39,12 +39,14 @@
     .contribute{
       &:hover {    
         cursor: pointer;
-        color: $hover-color;
+        /*color: $hover-color;*/
+        color: gray;
+        background-size: 12%;
       }
     }
   }
   .details{
-    margin-bottom: 25vh;
+    margin-bottom: 20vh;
     canvas {
       height: 100px;
       width: 100%;
@@ -64,9 +66,6 @@
     }
     .fn-s-1, .fn-s-2, .fn-s-3, .fn-s-4{
       text-decoration: underline;
-      &:hover{
-
-      }
     }
     sup.fn-s-1, sup.fn-s-2, sup.fn-s-3{
       text-decoration: none;
@@ -88,8 +87,6 @@
     }
     .fn-s-3{
       text-decoration: underline;
-      &:hover{
-      }
       sup {
         text-decoration: none;
       }
@@ -110,6 +107,9 @@
     }
     form {
       display: inline;
+    }
+    sup.fn-s-3 {
+      text-decoration:none;
     }
   }
 
