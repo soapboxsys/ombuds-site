@@ -21,17 +21,24 @@
 
 </header>
 <div class="translator">
-  Interested in translating? <a href="/people">Join our team!</a>
+  Interested in translating? <a href="/people/#join-us">Join our team!</a>
   <p class="hide">X</p>
 </div>
 <script type="text/javascript">
   $(document).ready(function(event){
-    $('.trigger a').on('click', function (){
+    $('.trigger a').on('click', function (e){
+      clearSelected();
       $('.translator').slideDown();
+      $(e.target).addClass('selected');
     });
     $('.hide').on('click', function(){
       $('.translator').slideUp();
+      clearSelected();
     })
+    // Clears the selected translation by removing the class from all anchors
+    function clearSelected() {
+        $('.trigger a').removeClass('selected');
+    }
   });
 </script>
 <style type="text/css">
