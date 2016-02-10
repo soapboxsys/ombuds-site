@@ -1,4 +1,8 @@
 .relay-list {
+    .relay-item:hover {
+        background: #f3f0f0;
+    }
+
     .relay-item {
         border-radius: 2px;
         border: 1px solid #E8E8E8;
@@ -21,8 +25,18 @@
             }
         }
         div.bot-line {
+            margin-top: 4px;
             span:last-child {
                 float: right;
+            }
+        }
+        span.opt-tor-hs-addr {
+            border-radius: 3px;
+            background: #6cc644;
+            padding: 2px 5px;
+            a {
+                color: #ffffff;
+                text-decoration: none;
             }
         }
     }

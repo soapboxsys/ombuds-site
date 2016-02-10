@@ -16,16 +16,31 @@ online or post a bulletin about it into the public record.
     <div class="relay-item">
         <img class="prof-pic" src="/res/images/relays/{{ relay.img }}" />
         <div class="top-line">
-            <span><a class="hostname" href="{{ relay.hostname }}" >{{ relay.hostname }}</a></span>
+
+            {% if relay.alt_urls %}
+            <!-- This needs lots of styling -->
+            <select>
+                <option value="{{ relay.hostname }}"/>{{ relay.hostname }}</option>
+              {% if relay.torHSAddr %}
+                <option value="{{ relay.torHSAddr }}"/>{{ relay.torHSAddr }}</option>
+              {% endif %}
+              {% for url in relay.alt_urls %}
+                <option value="{{ url }}"/>{{ url }}</option>
+              {% endfor %}
+            </select>
             <img class="alt-arrow" src="/res/alt-name-arrow.png" />
-            <!-- This needs to be a dropdown -->
+            {% else %}
+                <span><a class="hostname" href="{{ relay.hostname }}" >{{ relay.hostname }}</a></span>
+            {% endif %}
+
+
             <span>Launched: {{ relay.startDate }}</span>
         </div>
         <div class="bot-line">
             Hosted in {{ relay.serviceProvider }}
             {% if relay.torHSAddr %}
             <span class="opt-tor-hs-addr">
-                Tor HS Address: <a href="{{ relay.torHSAddr }}">{{ relay.torHSAddr }}</a>
+                <a href="{{ relay.torHSAddr }}">Tor Enabled</a>
             </span>
             {% endif %}
         </div>
