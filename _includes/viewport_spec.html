@@ -1,17 +1,12 @@
-<section class="landing">
-  <div class="main-view mv2">
-    <img class="ombuds home" alt="Ombuds" src="/res/icon-om-512.png">
-    <h1 class="page-heading">Ombuds</h1>
-    <h2 class="page-subheading home">A <strong>peer to peer</strong>, <strong>immutable</strong> microblog.</h2>
-  </div>
-  <div class="subnav">
-    <form action="/"><button id="home">home</button></form>
-    <form action="/relays"><button id="relays">relays</button></form>
-    <form action="/spec"><button id="spec">spec</button></form>
-    <form action="/research"><button id="research">research</button></form>
-    <form action="/people"><button id="people">about</button></form>
-  </div>
-</section>
+<nav class="subnav">
+  <img class="ombuds home" alt="Ombuds" src="/res/icon-om-64.png">
+  <h1 class="page-heading">Ombuds</h1>
+  <form action="/"><button id="home">home</button></form>
+  <form action="/relays"><button id="relays">relays</button></form>
+  <form action="/spec"><button id="spec">spec</button></form>
+  <form action="/research"><button id="research">research</button></form>
+  <form action="/people"><button id="people">about</button></form>
+</nav>
 <script type="text/javascript">
   var pn = window.location.pathname;
   pn = pn.replace(/\//g,'');
@@ -20,8 +15,7 @@
   $(document).ready(function(){
     if(pn.length > 0){
       pn.css({
-        "border-color":"darkslategray",
-        "background-color":"#959595"
+        "border-color":"darkslategray"
       });
     }
   }); 
