@@ -16,22 +16,24 @@ layout: default
   </p>
   <p class="footnote fn-2">
     <sup class="footnote-sup">2</sup>
-    To censor a user's bulletins, an attacker must either block access to Bitcoin completely or generate blocks faster than the entire honest network. Since most small nations do not have the hashing infrastructure to mount a 51% attack against the Bitcoin network, <strong>Ombuds's method for storing bulletins is robust</strong>.<!-- <sup class="fn-s-3">3</sup> -->
+    To censor a user's bulletins, an attacker must either block access to Bitcoin completely or generate blocks faster than the entire honest network. Since most small nations do not have the hashing infrastructure to mount a 51% attack against the Bitcoin network, <strong>Ombuds's method for storing bulletins is robust</strong>.
   </p>
   <p class="footnote fn-2">
     <!-- <sup class="footnote-sup">3</sup> -->
-    This system does not depend on the honesty or availability of any single website, service or hard drive. Instead, Ombuds relies on the <strong>global and public distribution</strong><sup class="fn-s-4">4</sup> of the block chain to ensure the availability of its public record.
+    This system does not depend on the honesty or availability of any single website, service or hard drive. Instead, Ombuds relies on the <strong>global and public distribution</strong> of the block chain to ensure the availability of its public record.
   </p>
 </section>
 <section class="research">
   <h2>Research Driven</h2>
   <p>Funding from <strong><a href="http://knightfoundation.org/">The Knight Foundation</a></strong></p>
   <div class="research-visual"></div>
-  <canvas>
-  </canvas>
-  <form action=""><button>Download our mobile app</button></form>
-  <form action="/spec"><button>Read our specification</button></form>
-  <form action="/research"><button>Read our Research Paper</button></form>
+  <div id="world">
+  </div>
+  <div class="links">
+    <form action=""><button>Download our mobile app</button></form>
+    <form action="/spec"><button>Read our specification</button></form>
+    <form action="/research"><button>Read our Research Paper</button></form>
+  </div>
   <p>
     Everyone can read an ombuds bulletin. Not everyone can read tweets, access facebook, or link others to their own personal, traditional blog. <strong class="fn-s-3">Ombuds can fill the widening space between an individual and society</strong>.<sup class="fn-s-3">3</sup>
   </p>
@@ -42,15 +44,7 @@ layout: default
     Lets work towards making inherently public information more public. <a href="/people">Join our team!</a >
   </p>
 </section>
-<script type="text/javascript">
-  function footnotes(fn){
-    $('.fn-s-'+fn).on('click',function(){$('.fn-'+fn).slideToggle('slow');});
-  }
-
-  $(document).ready(function(){
-    footnotes('1');
-    footnotes('2');
-    footnotes('3');
-  })
-</script>
-<script src="/res/scripts/sketch.js"></script>
+<script src="/res/scripts/ombuds.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/topojson.v0.min.js"></script>
+<script src="/res/scripts/world.js"></script>

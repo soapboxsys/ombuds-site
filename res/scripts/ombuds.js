@@ -5,10 +5,9 @@ var bc = 10;
 var counter = 0;
 var pcounter = -1;
 
-
 function setup() {
-  var myCanvas = createCanvas(800, 450);
-  myCanvas.parent('interactive-wrapper');
+  var myCanvas = createCanvas(800, 125);
+  myCanvas.parent('epiphyte');
   stroke(counter); 
   fill(counter);
   for(var i = 0; i<ob; i++){
@@ -40,9 +39,8 @@ function draw() {
 
 function Slide(){
 	//initial position
-	var pag
-	this.x = 400;
-	this.y = 0;
+	this.x = 0;
+	this.y = 50;
 	this.diameter = 2;
 	//greatest possible distance to move in a frame
 	counter++ 
@@ -50,8 +48,8 @@ function Slide(){
 	this.speed = counter/2;
 
 	this.move = function() {
-		this.x += random(-this.speed/6, this.speed/6);
-		this.y += random(-this.speed/3, this.speed/2);
+		this.x += random(-this.speed/3, this.speed/2);
+		this.y += random(-this.speed/6, this.speed/6);
 	};
 
 	this.display = function() {
