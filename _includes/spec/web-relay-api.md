@@ -74,21 +74,24 @@ All of the API routes the server exposes are documented below.
 The required fields are surrounded in brackets (eg. [ ]).
 The return type follows after the arrow (==>).
 The available query parameters further restrict API behaivor.
+Please note that not all queries have been implemented. 
+`PLANNED` indicated non implemented queries.
 
     Individual
 
-    /endo/[txid]        ==>     endorsement   ; A single endorsement
-    /bltn/[txid]        ==>     bulletin      ; A single bulletin with all of its endorsements
-    /block/[hash]       ==>     records       ; All of the records within a block.
-
-    Paginated
-
+    /endo/[txid]         ==>     endorsement   ; A single endorsement
+    /bltn/[txid]         ==>     bulletin      ; A single bulletin with all of its endorsements
+    /block/[hash]        ==>     records       ; All of the records within a block.
     /author/[address]    ==>     records       ; The records an author has produced.
     /tag/[name]          ==>     bulletins     ; The bulletins that contain a specific tag.
     /loc/[lat],[lon],[r] ==>     bulletins     ; The bulletins generated within r km of (lat, lon)
+
+    Paginated
+
     /range               ==>     records       ; All of the records between ?before and ?after.
+    /new                 ==>      records       ; New records in the public record.
     
-    Available Query parameters
+    PLANNED Query parameters 
 
         before=[blk hash]
         after=[blk hash]
@@ -99,11 +102,10 @@ The available query parameters further restrict API behaivor.
 
     /pop-tags          ==>      tags          ; The most popular tags within T of now.
     /most-endo         ==>      bulletins     ; The most endorsed bulletins within T
-    /dense-locs        ==>      locations     ; The most active locations within T
-    /dense-vertices    ==>      records       ; The densest areas of the graph within T
-    /new               ==>      records       ; New records in the public record.
+    /dense-locs        ==>      locations     ; PLANNED: The most active locations within T
+    /dense-vertices    ==>      records       ; PLANNED: The densest areas of the graph within T
 
-    Available Query Parameters
+    PLANNED Query Parameters
     
         T=after=[blk hash]
         before=[blk hash]
@@ -112,13 +114,12 @@ The available query parameters further restrict API behaivor.
     Information
 
     /status            ==>     object       ; See section 5.4
-    /config            ==>     object       ; See section 5.4
 
 ### 5.1 Individual Routes
 
 For queries that request single elements the schema is straight forward.
 
-`/endo/txid]` returns a single endorsement that conforms to [section 4. of DD04](/spec/endorsement#4).
+`/endo/[txid]` returns a single endorsement that conforms to [section 4. of DD04](/spec/endorsement#4).
 
 `/bltn/[txid]` returns a bulletin conforming to the schema described in section [3. JSON Schema of DD03](/spec/bulletin#3) with one additional field.
 That field is the list of endorsements for that bulletin.
@@ -222,50 +223,35 @@ The last section of API methods provides information about the web relay itself.
 These routes should be used by clients to determine if the API supports their version and use case.
 The JSON fields are documented below.
 
-`/config` returns the publicly available configuration details that the API is willing to share.
-    
-Schema:
-
-    {
-        apiVersion:   [semantic-version]    ; The API's version
-        btcdVersion:  [semantic-version]    ; The trusted node's version
-        hs-addr:      [hidden-service-addr] ; Optional TOR HS address
-        maxReturn:    [int]                 ; The max num of records the server will return.
-    }
-
-Example: 
-
-    {
-        "apiVersion":  "0.2.1",
-        "btcdVersion": "0.10.0-BETA",
-        "hs-addr":     "493092esdfaefa.onion"
-    }
-
 `/status` returns the status of the web relay.
 
 Schema:
 
     {
-        bestblk:       [blk-hash]       ; Current chain tip
-        uptime:        [secs]           ; Seconds since start
-        timestamp:     [secs]           ; Unix time
-        pubrecHash:    [rec-hash]       ; SHA3 hash of publice record.
-        lastBlockSeen: [human-time]     ; The last block the node has seen
+        bestblk:       [blk-head]       ; Current chain tip
+        uptime:        [secs]           ; Seconds since Relay start
         uptimeH:       [time-since]     ; Human readable uptime
-        timestampH:    [time-since]     ; Unix time
+        timestamp:     [secs]           ; Unix time the object was created
+        timestampH:    [time-since]     ; Human readable timestamp
     }
 
 
 Example:
 
     {
-        "bestblk":    "00000000054b84667...",
-        "uptime":     53943,
-        "timestamp":  123943321,
-        "pubrecHash": "d35d83395a46b16e..."
+        "blkTip" : {
+            "hash" : "0000000000000000011539ff4079d6a012616a3c6f7fc92c065b63297b1deb29",
+            "numBltns" : 0,
+            "numEndos" : 0,
+            "prevHash" : "000000000000000001932cf71e877fe43df56e6672fd9475a46a98f9b51fcc43",
+            "height" : 398827,
+            "timestamp" : 1455704043
+        },
+        "uptime" : 22,
+        "uptimeh" : "22.34s",
+        "timestamp" : 1455733907,
+        "timestamph" : "2016-02-17 18:31:47.731328735 +0000 UTC"
     }
-
-
 
 ## 6. Physical Deployment
 
