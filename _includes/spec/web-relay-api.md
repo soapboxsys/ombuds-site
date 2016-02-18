@@ -114,6 +114,7 @@ Please note that not all queries have been implemented.
     Information
 
     /status            ==>     object       ; See section 5.4
+    /whoami            ==>     object       ; See section 5.4
 
 ### 5.1 Individual Routes
 
@@ -251,6 +252,30 @@ Example:
         "uptimeh" : "22.34s",
         "timestamp" : 1455733907,
         "timestamph" : "2016-02-17 18:31:47.731328735 +0000 UTC"
+    }
+
+
+`/whoami` returns the status of the web relay.
+
+Schema:
+
+    {
+        admin:          [string]    ; The adminstrator of the relay
+        operator:       [string]    ; The operating organisation
+        user-agent:     [string]    ; The underlying api that serviced the request
+        location:       [string]    ; The location of the relay
+        contactInst:    [string]    ; Instructions about how to reach the relay
+    }
+
+
+Example:
+
+    {
+        "location" : "Anchorage, AK",
+        "HowToReach" : "Knock three times and speak Friend",
+        "operator" : "LCD Sound Systems",
+        "user-agent" : "ombudslib/jsonapi",
+        "admin" : "AV Mike"
     }
 
 ## 6. Physical Deployment
