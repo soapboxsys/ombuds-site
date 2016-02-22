@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "State of the System"
-date: 2016-01-26 12:00:000
+date: 2016-02-25 12:00:000
 category: announce
 author: Nick
 ---
@@ -9,6 +9,12 @@ author: Nick
 To conclude our work with the Knight Foundation, we are publicly indicating the releases and checkpoints that 
 the prototype grant brought our software projects too.
 <!--more-->
+
+## The Network is Live
+
+There are several Ombuds peers running on the Bitcoin network. For better or for worse the system will store public statements in the block chain immutably. 
+What follows is a description of the software projects that make this possible.
+
 
 ### Full Node
 
@@ -47,7 +53,7 @@ Some work that still needs to be done:
 ### Web Relay
 
 The Web Relay is an alpha state. 
-However, two relays ([ox.nskelsey.com](http://ox.nskelsey.com) & [relay.kuck.io](http://relay.kuck.io) have been launched that support visitors from the Web and smart phones.
+However, two relays ([ox.nskelsey.com](http://ox.nskelsey.com) and [relay.kuck.io](http://relay.kuck.io)) have been launched that support visitors from the Web and smart phones.
 
 ### Project Site
 
