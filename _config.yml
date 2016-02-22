@@ -1,6 +1,7 @@
 # Site settings
 title: Ombuds
 email: info@ombuds.org
+
 description: A peer to peer immutable microblog.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://ombuds.org" # the base hostname & protocol for your site
@@ -10,3 +11,4 @@ github_url: "https://github.com/ldemarest/ombuds-home"
 
 # Build settings
 markdown: kramdown
+excerpt_separator: <!--more-->
