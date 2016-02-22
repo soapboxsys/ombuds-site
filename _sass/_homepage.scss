@@ -1,21 +1,28 @@
+    h2{
+        color: darkslategrey;
+        opacity: 1;
+    }
   .landing{
-    height: 100vh;
+    height: 100%;
     
     .main-view{
-      height: 55.5vh;
+      height: 50%;
       text-align: center;
       h1 {
-        visibility: hidden;
-        display: none;
+        font-size: 2.5em;
+        margin-bottom:0;
       }
       .ombuds{
-        margin-top: 18vh;
+        margin-top: 10%;
         font-size: 1.5em;
-        width: 23.75%;
+        width: 15%;
       }
+      h2 {
+        opacity: 0.15;
+        }
     }
-    h2 {
-      margin-top: 3vh;
+    .calls-to-action {
+        margin: 5% 0;
     }
     .calls-to-action div {
       display: inline-table;
@@ -31,10 +38,23 @@
     .contributes{
       width:52%;
       .contribute{
-        background: url('/res/icon-om-64.png') 0 no-repeat;
-        background-size: 10%;
-        padding: 5px 0 0 65px;
+        display: inline-table;
+        width: 89%;
+        padding-left: 1%;
       }
+        svg{
+            width: 10%;
+            vertical-align: middle;
+            circle{ 
+                r:7px;
+                stroke:#D6285E;
+                stroke-width: 4px;
+                stroke-opacity: 1;
+                fill-opacity: 0;
+                cx:50%;
+                cy: 50%;
+            }
+        }
     }
     .contribute{
       &:hover {    
@@ -111,12 +131,13 @@
   .landing .contributes {
     width: 100%;
   }
-  .landing .contacts {
+  .landing .calls-to-action .contacts {
     width: 100%;
     text-align: center;
+    margin-bottom: 50%;
   }
   .landing .calls-to-action div {
-    margin: 6vh 0;
+    margin: 5% 0;
   }
   .research button {
     width: 75%;
@@ -130,6 +151,9 @@
     }
   }
   .details {
-    margin-top: 50vh;
+    margin-top: 5%;
   }
+    canvas{
+        display:none;
+    }
 }
