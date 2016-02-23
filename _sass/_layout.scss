@@ -169,6 +169,14 @@
 
 }
 
+#soapbox{
+    text-align: center;
+    width: 100%;
+    background-color: lightgray;
+    margin: 0;
+    padding: $spacing-unit / 4;
+}
+
 @include media-query($on-laptop) {
     .footer-col-1,
     .footer-col-2 {
