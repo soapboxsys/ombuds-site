@@ -1,6 +1,6 @@
 <!-- title: Author -->
 
-DD02 Author Explanation // Implemented
+DD02 Author Explanation
 =======================
 
 Overview

@@ -11,6 +11,9 @@ Nothing in a draft is final or an official decision or spell checked.
 A draft represents a rough take on a specific design and should not be relied upon.
 The status line that documents will carry follows below.
 
+    Status of This Documet // Draft
+    ----------------------
+
     While this is not an RFC, the intention behind this document is to describe the system completely so that it is reproducible and well understood.
     Please note this is a **draft of a design** that is subject to change. 
     Do not rely the content of this document for critical decisions. 

@@ -1,4 +1,4 @@
-DD07 Web Relay API Design Description // DRAFT
+DD07 Web Relay API Design Description
 ================================
 
 Overview
@@ -7,13 +7,12 @@ The goal of this document is to describe the intention behind and the details of
 This document will cover the specific requirements of an open-source API that serves public statements stored in Bitcoin's block chain.
 How this software is intended to be used and how it must function is also covered within.
 
-## Status of This Document
+## Status of This Document // REV-01
 While this is not an RFC, the intention behind this document is to describe the system completely so that it is reproducible and well understood.
-Please note this is a **draft of a design** that is subject to change. 
-Do not rely the content of this document for any important decisions.
-It has not been reviewed.
+Please note this is a working design. 
+The API queries documented in section 5 describe the functionality of the jsonapi pacakge in [ombudslib](https://github.com/soapboxsys/ombudslib).
 
-Nick -- Oct 2015
+Nick -- Feb 2016
 
 
 ## Contents

@@ -1,5 +1,5 @@
-DD08 An Auditable Public API Extension // DRAFT
-==============================================
+DD08 An Auditable Public API Extension
+======================================
 
 ## Overview
 The goal of this document is to describe the auditing process and the relevant aspects of a system that verifies that a web server is faithfully serving public statements included in a block chain. 
@@ -10,7 +10,7 @@ The goal of providing public auditing is to give clients that consume a third pa
 The tangible goal is to remove some of the attacks a malicious API server can mount against a client.
 While not providing anonymity, this extension lets clients prove to themselves and others that the API server is not manipulating records.
 
-## Status of This Document
+## Status of This Document // Draft
 This is the initial discussion of a design that is subject to change. 
 While this is not an RFC, the intention behind this document is to describe the extension completely so that it is reproducible and well understood.
 

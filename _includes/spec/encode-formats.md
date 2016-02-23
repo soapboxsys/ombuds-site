@@ -1,6 +1,6 @@
 <!-- title: Record Encoding Formats -->
 
-DD05 Record Encoding Formats // Implemented
+DD05 Record Encoding Formats
 ============================
 
 Overview
@@ -12,7 +12,7 @@ New encoding formats will likely be introduced.
 
 
 
-Status of This Document
+Status of This Document // Implemented
 -----------------------
 
 This document has been implemented as of [v0.3.0 of ombfullnode](https://github.com/soapboxsys/ombfullnode/releases/tag/BETA_0_3_0). 
