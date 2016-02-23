@@ -1,6 +1,6 @@
 <!-- title: Endorsment Def -->
 
-DD04 Endorsement Specification // Revision-1
+DD04 Endorsement Specification // Implemented
 ==============================
 
 Overview

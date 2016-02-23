@@ -1,6 +1,6 @@
 <!-- title: Record Encoding Formats -->
 
-DD05 Record Encoding Formats
+DD05 Record Encoding Formats // Implemented
 ============================
 
 Overview
@@ -11,12 +11,14 @@ Each format has an introduction date and is not a valid encoding format before t
 New encoding formats will likely be introduced.
 
 
-## Status of this Document
 
-Encoding examples are not up to date and contain inaccurate information.
-The introduction date of the encoding formats will be the relase date of the Ombuds specification.
+Status of This Document
+-----------------------
 
-Alex, Nick -- Dec 15, 2015
+This document has been implemented as of [v0.3.0 of ombfullnode](https://github.com/soapboxsys/ombfullnode/releases/tag/BETA_0_3_0). 
+The actual logic that handles the record encoding formats lies in [ombudslib](https://github.com/soapboxsys/ombudslib) specifically in the ombwire package. Beware that these examples may be slightly off, refer to the test cases ombwire for functional examples.
+
+Nick -- Feb 22, 2016
 
 
 ## Contents
