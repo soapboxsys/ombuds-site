@@ -1,28 +1,23 @@
 <footer class="site-footer">
 
   <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
+        <img class="ombuds home" alt="Ombuds" src="/res/icon-om-64.png">
+        <h2 class="footer-heading">{{ site.title }}</h2>
+        <p>{{ site.description }}</p>
+      </div>
+      <div class="footer-col footer-col-2">
+      </div>
+      <div class="footer-col footer-col-3">
         <ul class="contact-list">
           <!-- <li>{{ site.title }}</li> -->
-          <li>email us at <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        <li>email us at <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
         <li>contribute <a href="https://github.com/soapboxsys">on Github</a></li>
         <li>subscribe <a href="https://getombuds.org/feed.xml">via RSS</a></li>
         <li>chat <a href="http://irc.lc/freenode/ombuds">on IRC</a></li>
         </ul>
       </div>
-
-      <div class="footer-col footer-col-2">
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
     </div>
-
   </div>
-
 </footer>

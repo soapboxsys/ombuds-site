@@ -39,8 +39,8 @@
       width:52%;
       .contribute{
         display: inline-table;
-        width: 89%;
-        padding-left: 1%;
+        width: 87%;
+        padding-left: 3%;
       }
         svg{
             width: 10%;
@@ -85,6 +85,7 @@
     }
   }
   .research {
+    margin-bottom: 10%;
     canvas {
       height:  500px;
       width:  100%;
@@ -106,8 +107,7 @@
       opacity:0.5;
     }
     button:hover {
-      background-color: lightgray;
-      border-color: darkslategray;
+      opacity: 1;
       cursor: pointer;
     }
     .links {
@@ -141,6 +141,7 @@
   }
   .landing .calls-to-action div {
     margin: 5% 0;
+    padding-bottom:5%;
   }
   .research button {
     width: 75%;

@@ -1,8 +1,5 @@
 <header class="site-header">
-  <a href="/">
-    <img class="ombuds home" alt="Ombuds" src="/res/icon-om-64.png">
-    <p class="nav-title">Ombuds</p>
-  </a>
+
   <div class="wrapper">
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -13,15 +10,38 @@
         </svg>
       </a>
       <div class="trigger">
-        <a href="/">Home</a>
-        <a href="/relays" class="selected">Relays</a>
-        <a href="/research">Research</a>
-        <a href="/spec">Specification</a>
-        <a href="/blog">Blog</a>
-        <a href="/people">People</a>
-
+        <a href="#">arabic</a>
+        <a href="#" class="selected">english</a>
+        <a href="#">spanish</a>
+        <a href="#">turkish</a>
       </div>
     </nav>
 
   </div>
+
 </header>
+<div class="translator">
+  Interested in translating? <a href="/people/#join-us">Join our team!</a>
+</div>
+<script type="text/javascript">
+  $(document).ready(function(event){
+    $('.trigger a').on('click', function (e){
+      // $('.trigger a').removeClass('selected');
+      // $(e.target).addClass('selected');
+      $('.translator').slideDown();
+      setTimeout(function(){$('.translator').slideUp();},3000);
+    });
+  });
+</script>
+<style type="text/css">
+  .translator{
+    display: none;
+    text-align: center;
+    background-color: lightgray;
+    padding: 1em 0;
+    opacity: 1;
+  }
+  .selected {
+    text-decoration: underline;
+  }
+</style>

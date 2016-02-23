@@ -19,7 +19,6 @@ layout: default
     To censor a user's bulletins, an attacker must either block access to Bitcoin completely or generate blocks faster than the entire honest network. Since most small nations do not have the hashing infrastructure to mount a 51% attack against the Bitcoin network, <strong>Ombuds's method for storing bulletins is robust</strong>.
   </p>
   <p class="footnote fn-2">
-    <!-- <sup class="footnote-sup">3</sup> -->
     This system does not depend on the honesty or availability of any single website, service or hard drive. Instead, Ombuds relies on the <strong>global and public distribution</strong> of the block chain to ensure the availability of its public record.
   </p>
 </section>
@@ -30,9 +29,9 @@ layout: default
   <div id="world">
   </div>
   <div class="links">
-    <form action=""><button>Download our mobile app</button></form>
-    <form action="/spec"><button>Read our specification</button></form>
     <form action="/research"><button>Read our Research Paper</button></form>
+    <form action=""><button id="downloadApp">Download our mobile app</button></form>
+    <form action="/spec"><button>Read our specification</button></form>
   </div>
   <p>
     Everyone can read an ombuds bulletin. Not everyone can read tweets, access facebook, or link others to their own personal, traditional blog. <strong class="fn-s-3">Ombuds can fill the widening space between an individual and society</strong>.<sup class="fn-s-3">3</sup>
@@ -48,3 +47,10 @@ layout: default
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/topojson.v0.min.js"></script>
 <script src="/res/scripts/world.js"></script>
+<style type="text/css">
+  #downloadApp{
+    background-color: #D6285E;
+    color: rgb(253, 253, 253);
+    opacity: 1;
+  }
+</style>
