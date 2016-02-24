@@ -1,6 +1,6 @@
 <!-- title: Bulletins Def -->
 
-DD03 Bulletin Specification // DRAFT
+DD03 Bulletin Specification
 ===========================
 
 Overview
@@ -11,14 +11,13 @@ A bulletin's author is attributed to a public key according to the [author defin
 For a bulletin to be considered part of the public record it must be included in Bitcoin's block chain.
 The contents below describe the valid formats a bulletin can take.
 
-Status of this Document
+Status of this Document // Implemented
 -----------------------
 
-This document has been reviewed and is finalized for implementation.
+This document has been implemented as of [v0.3.0 of ombfullnode](https://github.com/soapboxsys/ombfullnode/releases/tag/BETA_0_3_0). 
+The actual logic that handles encoding lies in [ombudslib](https://github.com/soapboxsys/ombudslib).
 
-
-Nick -- Jan 14, 2015
-
+Nick -- Feb 22, 2016
 
 
 Contents

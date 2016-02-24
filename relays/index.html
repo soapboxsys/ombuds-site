@@ -12,22 +12,26 @@ online or post a bulletin about it into the public record.
 
 <div class="relay-list">
 {% for relay in site.data.relays %}
+    {% if relay.alt_urls %}
     <div class="relay-item">
+    {% else %}
+    <div class="relay-item hover" onclick="window.location='{{ relay.hostname }}'" >
+    {% endif %}
         <img class="prof-pic" src="/res/images/relays/{{ relay.img }}" />
         <div class="top-line">
 
             {% if relay.alt_urls %}
             <!-- This needs lots of styling -->
-            <select>
+            <select onchange="window.location=this.value">
+                <option disabled selected> – Multiple Domains – </option>
                 <option value="{{ relay.hostname }}"/>{{ relay.hostname }}</option>
               {% if relay.torHSAddr %}
                 <option value="{{ relay.torHSAddr }}"/>{{ relay.torHSAddr }}</option>
               {% endif %}
               {% for url in relay.alt_urls %}
-                <option value="{{ url }}"/>{{ url }}</option>
+              <option value="{{ url }}"/><a href="{{ url }}">{{ url }}</a></option>
               {% endfor %}
             </select>
-            <img class="alt-arrow" src="/res/alt-name-arrow.png" />
             {% else %}
                 <span><a class="hostname" href="{{ relay.hostname }}" >{{ relay.hostname }}</a></span>
             {% endif %}

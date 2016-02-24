@@ -1,4 +1,4 @@
-DD01 Public Record Specification // REV-01
+DD01 Public Record Specification
 ================================
 
 Overview
@@ -8,13 +8,11 @@ In the same way that a block chain can define a "public ledger" that records all
 This document defines the behavior of the public record and discusses the pratical implications of using the Bitcoin block chain as a public ledger.
 
 
-## Status of This Document
+## Status of This Document // REV-02
 
-While this is not an RFC, the intention behind this document is to describe the system completely so that it is reproducible and well understood.
-Please understand this is a **revised draft of a design** that is subject to change. 
-Do not rely the content of this document for critical decisions.
+While this is not an RFC, the intention behind this document is to describe the system completely so that it is reproducible and well understood. As of [v0.3.0 of ombfullnode](https://github.com/soapboxsys/ombfullnode/releases/tag/BETA_0_3_0) support for this document is partially implemented. Notably the pending db described in section 4 is missing. Only records commit to the block chain are stored by peers, all others are left out.
 
-Nick, Kenneth -- Jan 5, 2015
+Nick -- Feb 22, 2016
 
 
 ## Contents

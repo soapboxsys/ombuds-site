@@ -6,7 +6,7 @@ Overview
 A mobile application for the Android operating system.
 
 
-Status of This Document
+Status of This Document // Partial Draft
 -----------------------
 While this is not an RFC, the intention behind this document is to describe the system completely so that it is reproducible and well understood.
 Please note this is a **draft of a design** that is subject to change. 

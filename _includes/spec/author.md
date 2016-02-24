@@ -1,6 +1,6 @@
 <!-- title: Author -->
 
-DD02 Author Explanation // REV-1
+DD02 Author Explanation
 =======================
 
 Overview

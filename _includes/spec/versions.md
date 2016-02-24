@@ -1,5 +1,5 @@
-DD00 Design Document Versioning // DRAFT
-=======================================
+DD00 Design Document Versioning
+===============================
 
 The documents contained on specify intended program behaivor, because the documents themselves are changing things themselves it is useful to label them.
 The label scheme is simple. Each document proceeds in order from Draft --> Revision --> Implemented. 
@@ -10,6 +10,9 @@ What follows below is the criterea for what you can expect from a document label
 Nothing in a draft is final or an official decision or spell checked. 
 A draft represents a rough take on a specific design and should not be relied upon.
 The status line that documents will carry follows below.
+
+    Status of This Documet // Draft
+    ----------------------
 
     While this is not an RFC, the intention behind this document is to describe the system completely so that it is reproducible and well understood.
     Please note this is a **draft of a design** that is subject to change. 

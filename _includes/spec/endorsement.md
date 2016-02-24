@@ -1,7 +1,15 @@
 <!-- title: Endorsment Def -->
 
-DD04 Endorsement Specification // Revision-1
+DD04 Endorsement Specification
 ==============================
+
+Status of this Document // Implemented
+-----------------------
+
+This document has been implemented as of [v0.3.0 of ombfullnode](https://github.com/soapboxsys/ombfullnode/releases/tag/BETA_0_3_0). 
+The actual logic that handles encoding lies in [ombudslib](https://github.com/soapboxsys/ombudslib).
+
+Nick -- Feb 23, 2016
 
 Overview
 --------
