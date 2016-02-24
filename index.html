@@ -29,9 +29,9 @@ layout: default
   <div id="world">
   </div>
   <div class="links">
-    <form action="/research"><button>Read our Research Paper</button></form>
-    <form action=""><button id="downloadApp">Download our mobile app</button></form>
-    <form action="/spec"><button>Read our specification</button></form>
+    <form class="research-form" action="/research"><button>Read our Research Paper</button></form>
+    <form class="research-form" action=""><button id="downloadApp">Download our mobile app</button></form>
+    <form class="research-form" action="/spec"><button>Read our specification</button></form>
   </div>
   <p>
     Everyone can read an ombuds bulletin. Not everyone can read tweets, access facebook, or link others to their own personal, traditional blog. <strong class="fn-s-3">Ombuds can fill the widening space between an individual and society</strong>.<sup class="fn-s-3">3</sup>
@@ -48,9 +48,11 @@ layout: default
 <script src="http://d3js.org/topojson.v0.min.js"></script>
 <script src="/res/scripts/world.js"></script>
 <style type="text/css">
-  #downloadApp{
-    background-color: #D6285E;
-    color: rgb(253, 253, 253);
-    opacity: 1;
+  .site-header .nav-title {
+    position: absolute;
+    margin: 15px 20px;
+  }
+  .site-header img.ombuds.home{
+    display: none !important;
   }
 </style>

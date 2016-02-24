@@ -98,6 +98,9 @@
       margin-left: -1em;
       vertical-align: top;
     }
+    .research-form{
+      display:inline-block;
+    }
 
     button{
       vertical-align: text-bottom;
@@ -110,10 +113,15 @@
       opacity: 1;
       cursor: pointer;
     }
+    #downloadApp{
+      background-color: #D6285E;
+      color: rgb(253, 253, 253);
+      opacity: 1;
+    }
     .links {
       margin-bottom: 6%;
-      display: flex;
-      justify-content:space-between;
+      width: 100%;
+      text-align:center;
     }
     path {
       stroke: gray;
@@ -144,10 +152,13 @@
     padding-bottom:5%;
   }
   .research button {
-    width: 75%;
+    width: 100%;
     display: block;
-    margin: 2% auto;
-    padding: 0.75em 0.25em;
+    margin: 3% auto;
+    padding: 1.5em 0.25em;
+  }
+  .research-form {
+    width: 100%;
   }
   .research form:last-of-type {
     button {

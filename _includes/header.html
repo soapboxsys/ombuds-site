@@ -13,7 +13,6 @@
         </svg>
       </a>
       <div class="trigger">
-        <a href="/">Home</a>
         <a href="/relays" class="selected">Relays</a>
         <a href="/research">Research</a>
         <a href="/spec">Specification</a>
@@ -24,4 +23,23 @@
     </nav>
 
   </div>
+  <div class="languages-wrapper">
+      <div class="global-language">
+        <ul class="language">
+            <li><a href="#">ENG</a></li>
+        </ul>
+        <ul class="all-languages hide">
+            <li><a href="#">ARA</a></li>
+            <li><a href="#">CHI  </a></li>
+            <li><a href="#">DEU</a></li>
+            <li><a href="#">ENG</a></li>
+            <li><a href="#">ESP</a></li>
+        </ul>
+      </div>
+    </div>
 </header>
+<script type="text/javascript">
+  $('.language').on('click',function(){
+    $('.all-languages').toggleClass('hide');
+  })
+</script>
