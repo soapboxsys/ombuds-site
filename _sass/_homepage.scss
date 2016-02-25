@@ -9,7 +9,7 @@
       height: 50%;
       text-align: center;
       h1 {
-        font-size: 2.5em;
+        font-size: 2.5em !important;
         margin-bottom:0;
       }
       .ombuds{
@@ -110,7 +110,18 @@
       vertical-align: top;
     }
     .research-form{
-      display:inline-block;
+      display: inline-block;
+      width: 30%;
+      background-color: lightgrey;
+      padding: 1%;
+      text-align: center;
+      @include media-query($on-palm) {
+        width: inherit;
+        display: block;
+        margin: 5% 0;
+        padding: 5%;
+        text-align: center;
+      }
     }
 
     button{
@@ -131,8 +142,13 @@
     }
     .links {
       margin-bottom: 6%;
-      width: 100%;
-      text-align:center;
+      /*text-align:center;*/
+      margin-bottom: 6%;
+      width: 103%;
+      margin-left: 0;
+      @include media-query($on-palm) {
+        width: initial;
+      }
     }
     path {
       stroke: gray;
@@ -155,7 +171,7 @@
     }
   }
   .landing .main-view  .ombuds {
-        margin-top: 25%;
+      margin-top: 25%;
     }
   .landing .calls-to-action .contacts {
     width: 100%;
@@ -173,9 +189,6 @@
     margin: 3% auto;
     padding: 1.5em 0.25em;
   }
-  .research-form {
-    width: 100%;
-  }
   .research form:last-of-type {
     button {
       margin-bottom: 20%;
@@ -185,6 +198,13 @@
     margin-top: 5%;
   }
     canvas{
-        display:none;
+      display: none;
     }
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  canvas {
+    display: none;
+  }
 }

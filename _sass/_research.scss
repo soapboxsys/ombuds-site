@@ -2,6 +2,9 @@
 #paperPreview h3{
     display: inline-block;
     width: 55%;
+    @include media-query($on-palm) {
+        width: 100%;
+    }
 }
 
 #paperPreview h3{
@@ -13,6 +16,9 @@
     height: 375px;
     width: auto;
     margin-top: 16px;
+    @include media-query($on-palm) {
+        display: none;
+    }
 }
 
 #adobeImg {
