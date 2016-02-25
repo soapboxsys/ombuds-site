@@ -30,7 +30,11 @@
             display: none;
         }
         ul.all-languages{
+            display: none !important;
             margin-left:35px;
+            @include media-query($on-palm){
+                display: none !important;
+            }
         }
         ul.all-languages li{
             list-style-type: none;
@@ -56,6 +60,24 @@
                 }
             }
         }
+    }
+}
+.translator {
+    display: none;
+    text-align: center;
+    background-color: lightgray;
+    padding: 0.5em 0;
+    opacity: 1;
+    font-size: 0.75em;
+}
+.language-options {
+    background-color: #fdfdfd;
+    color: #D6285E;
+    a{
+        padding: 0 $spacing-unit / 4;
+    }
+    @include media-query($on-palm) {
+        display: none;
     }
 }
 

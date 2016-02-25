@@ -30,7 +30,7 @@
         </ul>
         <ul class="all-languages hide">
             <li><a href="#">ARA</a></li>
-            <li><a href="#">CHI  </a></li>
+            <li><a href="#">CHI</a></li>
             <li><a href="#">DEU</a></li>
             <li><a href="#">ENG</a></li>
             <li><a href="#">ESP</a></li>
@@ -38,8 +38,17 @@
       </div>
     </div>
 </header>
+<div class="translator">
+  Interested in translating? <a href="/people/#join-us">Join our team!</a>
+</div>
+<div class="translator language-options">
+  <a href="">ARA</a> <a href="">CHI</a> <a href="">DEU</a> <a href="">ENG</a> <a href="">ESP</a>
+</div>
 <script type="text/javascript">
-  $('.language').on('click',function(){
-    $('.all-languages').toggleClass('hide');
-  })
+  $(document).ready(function(event){
+    $('.language').on('click', function (e){
+      $('.translator, .all-languages').slideDown();
+      setTimeout(function(){$('.translator, .all-languages').slideUp();},4000);
+    });
+  });
 </script>
