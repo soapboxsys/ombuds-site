@@ -87,7 +87,7 @@ Please note that not all queries have been implemented.
 
     Paginated
 
-    /range               ==>     records       ; All of the records between ?before and ?after.
+    /range               ==>      records       ; All of the records between ?before and ?after.
     /new                 ==>      records       ; New records in the public record.
     
     PLANNED Query parameters 
@@ -114,6 +114,7 @@ Please note that not all queries have been implemented.
 
     /status            ==>     object       ; See section 5.4
     /whoami            ==>     object       ; See section 5.4
+    /new/statistics    ==>     object       ; See section 5.4
 
 ### 5.1 Individual Routes
 
@@ -276,6 +277,18 @@ Example:
         "user-agent" : "ombudslib/jsonapi",
         "admin" : "AV Mike"
     }
+
+`/new/statistics` returns the information on the lastest records available to the relay.
+
+Schema
+
+{
+        startTs:    [int] ; Unix time for the start of the time range
+        stopTs:     [int] ; Unix time for the end of the time range
+        numBlocks:  [int] ; num blocks seen in the last 24 hrs
+        numBltns:   [int] ; num bulletns seen in the last 24 hrs
+        numEndos:   [int] ; num endos seen in the last 24 hrs
+}
 
 ## 6. Physical Deployment
 
