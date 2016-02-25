@@ -216,7 +216,7 @@
     width: 100%;
     background-color: lightgray;
     margin: 0;
-    padding: $spacing-unit / 4;
+    padding: $spacing-unit / 4 0;
 }
 
 @include media-query($on-laptop) {
