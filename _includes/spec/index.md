@@ -1,5 +1,5 @@
-Ombuds Technical Specification
-==============================
+Technical Specification
+=======================
 Ombuds ensures a person's words are neither forgotten nor modified.
 This document defines and specifies the implementation of [our paper](/research/).
 

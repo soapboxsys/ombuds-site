@@ -282,13 +282,13 @@ Example:
 
 Schema
 
-{
+  {
         startTs:    [int] ; Unix time for the start of the time range
         stopTs:     [int] ; Unix time for the end of the time range
         numBlocks:  [int] ; num blocks seen in the last 24 hrs
         numBltns:   [int] ; num bulletns seen in the last 24 hrs
         numEndos:   [int] ; num endos seen in the last 24 hrs
-}
+  }
 
 ## 6. Physical Deployment
 

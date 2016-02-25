@@ -236,9 +236,10 @@
 #soapbox{
     text-align: center;
     width: 100%;
-    background-color: lightgray;
+    background-color: #EEE;
     margin: 0;
     padding: $spacing-unit / 4 0;
+    font-size: 0.8em;
 }
 
 @include media-query($on-laptop) {
