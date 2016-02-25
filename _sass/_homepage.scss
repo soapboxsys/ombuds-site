@@ -31,18 +31,22 @@
     }
     .contacts{
       width: 47%;
+      vertical-align: top;
+      margin-top: 7px !important;
       .contact{
         margin-bottom: 0;
       }
     }
     .contributes{
       width:52%;
-      .contribute{
-        display: inline-table;
-        display: -moz-grid;
-        width: 87%;
-        padding-left: 3%;
-      }
+      .cta {
+        &:hover{
+          svg{
+            circle{
+              r:10px;
+            }
+          }
+        }
         svg{
             width: 10%;
             vertical-align: middle;
@@ -56,13 +60,19 @@
                 cy: 50%;
             }
         }
-    }
-    .contribute{
-      &:hover {    
-        cursor: pointer;
-        /*color: $hover-color;*/
-        color: gray;
-        background-size: 12%;
+        .contribute{
+          display: inline-table;
+          display: -moz-grid;
+          width: 87%;
+          padding-left: 3%;
+          vertical-align: middle;
+          margin: 7px 0;
+          &:hover {    
+            cursor: pointer;
+            color: gray;
+            background-size: 12%;
+          }
+        }
       }
     }
   }
@@ -139,6 +149,10 @@
 @include media-query($on-palm) {
   .landing .contributes {
     width: 100%;
+    margin: 7px 0;
+    .cta{
+      margin:0;
+    }
   }
   .landing .main-view  .ombuds {
         margin-top: 25%;
@@ -147,6 +161,7 @@
     width: 100%;
     text-align: center;
     margin-bottom: 50%;
+    margin-top : 0;
   }
   .landing .calls-to-action div {
     margin: 5% 0;

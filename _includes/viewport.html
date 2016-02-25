@@ -11,19 +11,19 @@
       <p class="contact">chat <a href="http://irc.lc/freenode/ombuds">on IRC</a></p>
     </div>  
     <div class="contributes">    
-        <div class="" id="">
+        <div class="cta" id="read">
             <svg width="10%" height="25px">
                 <circle cx="50%" cy="50%" r="7px" stroke="red" stroke-width="2" stroke-opacity=".75" fill-opacity="0">
             </svg>
             <p class="contribute write"><strong>Write</strong> posts with our mobile app or store tweets into the public domain by retweeting with #RTP.</p>
         </div>
-        <div class="" id="">
+        <div class="cta" id="write">
              <svg width="10%" height="25px">
                 <circle cx="50%" cy="50%" r="7px" stroke="red" stroke-width="2" stroke-opacity=".75" fill-opacity="0">
             </svg>
             <p class="contribute read"><strong>Read</strong> posts stored in the public domain. Choose from web-relay running institutions.</p>
         </div>
-        <div class="" id="">
+        <div class="cta" id="run">
              <svg width="10%" height="25px">
                 <circle cx="50%" cy="50%" r="7px" stroke="red" stroke-width="2" stroke-opacity=".75" fill-opacity="0">
             </svg>
@@ -34,8 +34,8 @@
   </div>
   <script type="text/javascript">
     $(document).ready(function(){
-      $('.read, .write, .run').on('click',function(){
-       // window.location.href = "";
+      $('#read, #write, #run').on('click',function(){
+        $(this)
       });
     })
   </script>
