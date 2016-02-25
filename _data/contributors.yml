@@ -12,10 +12,10 @@
   img: alexe.jpg
   blurb: "Alex is a researcher with an interest in global development and European politics. He is an outspoken privacy advocate that runs an opinion-as-a-service operation in his free time."
   ext_sites: 
-    - url: "https://alexevans.com"
+    - url: "http://soapbox.systems"
       txt: "Site"
-    - url: "https://google.com"
-      txt: "Keybase"
+    - url: "https://pgp.mit.edu/pks/lookup?op=vindex&search=0x665A874A9376BEDD"
+      txt: "PGP Key"
 - name: "Nick Skelsey"
   img: "nick.png"
   blurb: "Nick is a systems programmer. He has worked as a network engineer and frontend web developer at a few startups and on open source projects."
