@@ -3,7 +3,7 @@ layout: default
 ---
 <section class="details">   
   <h2>Peer-to-Peer</h2>
-  <p><strong>Ombuds</strong> uses the <strong>Bitcoin</strong> peer-to-peer protocol. As a Bitcoin <strong class="fn-s-1">epiphyte</strong><sup class="fn-s-1">1</sup>, Ombuds lives in and throughout the Bitcoin network, but doesn't interfere with the larger Bitcoin ecosystem. Ombuds is well researched, extensively tested, and trusted by organizations and individuals.</p>
+  <p><strong>Ombuds</strong> uses the <strong>Bitcoin</strong> peer-to-peer protocol. As a Bitcoin <strong class="fn-s-1">epiphyte</strong><sup class="fn-s-1">1</sup>, Ombuds lives in and throughout the Bitcoin network, but doesn't interfere with the larger Bitcoin ecosystem. Ombuds is well researched and well tested.</p>
   <p class="footnote fn-1">
     <sup class="footnote-sup">1</sup>
     Ep-i-phyte <i>noun</i></br>
@@ -12,14 +12,14 @@ layout: default
   <div id="epiphyte" class="footnote fn-1"></div>
   <h2>Immutable</h2>
   <p>
-    <strong>Ombuds</strong> enables any holder of Bitcoin to publish <strong>immutable statements</strong> within Bitcoin's block chain. These statements, which we call bulletins, are encoded within Bitcoin transactions which can be sent from a smartphone or a computer. If a user can get a transaction into the block chain it is <strong class="fn-s-2">effectively permanent</strong>.<sup class="fn-s-2">2</sup>
+    <strong>Ombuds</strong> enables any holder of Bitcoin to publish <strong>immutable statements</strong> within Bitcoin's block chain. These statements, which are called bulletins, are encoded within Bitcoin transactions which can be sent from a smartphone or a computer. If a user can get a transaction into the block chain it is <strong class="fn-s-2">effectively permanent</strong>.<sup class="fn-s-2">2</sup>
   </p>
   <p class="footnote fn-2">
     <sup class="footnote-sup">2</sup>
     To censor a user's bulletins, an attacker must either block access to Bitcoin completely or generate blocks faster than the entire honest network. Since most small nations do not have the hashing infrastructure to mount a 51% attack against the Bitcoin network, <strong>Ombuds's method for storing bulletins is robust</strong>.
   </p>
   <p class="footnote fn-2">
-    This system does not depend on the honesty or availability of any single website, service or hard drive. Instead, Ombuds relies on the <strong>global and public distribution</strong> of the block chain to ensure the availability of its public record.
+    This system does not depend on the honesty or availability of any single website, service or hard drive. Instead, Ombuds relies on the <strong>global and public distribution</strong> of the block chain to ensure the availability of this public record.
   </p>
 </section>
 <section class="research">
@@ -34,25 +34,19 @@ layout: default
     <div class="research-form">Read our specification</div>
   </div>
   <p>
-    Everyone can read an ombuds bulletin. Not everyone can read tweets, access facebook, or link others to their own personal, traditional blog. <strong class="fn-s-3">Ombuds can fill the widening space between an individual and society</strong>.<sup class="fn-s-3">3</sup>
-  </p>
-  <p class="footnote fn-3">
-    <sup class="footnote-sup">3</sup>
-    Bitcoin is an experiment and Ombuds is an experimental public service built on top of it.
-  </br>
-    Lets work towards making inherently public information more public. <a href="/people">Join our team!</a >
+  Bitcoin is an experiment and Ombuds is an <strong class="fn-s-3">experimental public service</strong> built on top of it. It is no longer sufficient to rely on Twitter, Facebook, or your blog to protect your right to free expression online. Lets work towards making public expression <strong>public by design</strong>.
   </p>
 </section>
+
 <script src="/res/scripts/ombuds.js"></script>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/topojson.v0.min.js"></script>
 <script src="/res/scripts/world.js"></script>
 <style type="text/css">
+  .site-header img.ombuds.home,
   .site-header .nav-title {
-    position: absolute;
-    margin: 15px 20px;
-  }
-  .site-header img.ombuds.home{
-    display: none !important;
+    opacity: 0;
+    -webkit-transition: opacity 0.50s;
+    transition: opacity 0.50s;
   }
 </style>
