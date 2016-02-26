@@ -10,16 +10,16 @@ To conclude our work with the Knight Foundation, we are publicly indicating the 
 the prototype grant brought our software projects too.
 <!--more-->
 
-## The Network is Live
+### The Network is Live
 
 There are several Ombuds peers running on the Bitcoin network. For better or for worse the system will store public statements in the block chain immutably. 
 What follows is a description of the software projects that make this possible.
 
 
-### Full Node
+#### Full Node
 
 The Ombuds Full Node, named ombfullnode, was rebased ontop of revised branch of `0.12.0`.
-After a complete rewrite, the software lives in beta tagged at version `0.3.0`.
+After a complete rewrite, the software lives in beta tagged at [version `0.3.0`](https://github.com/soapboxsys/ombfullnode/releases/tag/BETA_0_3_0).
 
 Some notable improvements since June 2015 include:
 
@@ -33,7 +33,7 @@ Some notable features missing:
 - Websocket hooks for Ombuds related events
 - Native Wallet support for publishing
 
-### Android Application
+#### Android Application
 
 The Ombuds Android application after being released on Google Play has undergone tweaks and is now at `0.X.X`.
 Originally a fork of Bitcoin-Wallet, all of the work that has gone into this release was conducted after August of 2015.
