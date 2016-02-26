@@ -1,6 +1,8 @@
 ---
 layout: spec-page
-title: Endorsement
+title: Specification
 ---
 
-{% markdown spec/endorsement.md %}
+{% for post in site.categories.endorsement %}
+    {{ post.content }}
+{% endfor %}

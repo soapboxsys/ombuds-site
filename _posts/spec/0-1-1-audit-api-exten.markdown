@@ -1,3 +1,8 @@
+---
+category: audit
+
+---
+
 DD08 An Auditable Public API Extension
 ======================================
 

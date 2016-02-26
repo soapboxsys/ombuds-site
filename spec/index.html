@@ -2,4 +2,6 @@
 layout: spec-page
 ---
 
-{% markdown spec/index.md %}
+{% for post in site.categories.index %}
+    {{ post.content }}
+{% endfor %}

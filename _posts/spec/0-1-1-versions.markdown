@@ -1,3 +1,7 @@
+---
+category: version
+---
+
 DD00 Design Document Versioning
 ===============================
 

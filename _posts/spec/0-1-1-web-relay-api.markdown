@@ -1,3 +1,7 @@
+---
+category: web
+---
+
 DD07 Web Relay API Design Description
 ================================
 

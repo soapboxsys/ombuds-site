@@ -1,3 +1,7 @@
+---
+category: public
+---
+
 DD01 Public Record Specification
 ================================
 

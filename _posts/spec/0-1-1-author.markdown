@@ -1,4 +1,6 @@
-<!-- title: Author -->
+---
+category: author
+---
 
 DD02 Author Explanation
 =======================

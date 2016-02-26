@@ -1,6 +1,8 @@
 ---
 layout: spec-page
-title: Test Data
+title: Specification
 ---
 
-{% markdown spec/test-data.md %}
+{% for post in site.categories.test %}
+    {{ post.content }}
+{% endfor %}

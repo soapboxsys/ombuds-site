@@ -1,3 +1,7 @@
+---
+category: index
+---
+
 Technical Specification
 =======================
 Ombuds ensures a person's words are neither forgotten nor modified.

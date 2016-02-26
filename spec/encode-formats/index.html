@@ -1,6 +1,8 @@
 ---
 layout: spec-page
-title: Wire Encoding Formats
+title: Specification
 ---
 
-{% markdown spec/encode-formats.md %}
+{% for post in site.categories.encode %}
+    {{ post.content }}
+{% endfor %}

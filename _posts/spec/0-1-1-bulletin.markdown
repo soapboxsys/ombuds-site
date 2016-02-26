@@ -1,4 +1,6 @@
-<!-- title: Bulletins Def -->
+---
+category: bulletin
+---
 
 DD03 Bulletin Specification
 ===========================

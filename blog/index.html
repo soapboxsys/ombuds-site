@@ -4,12 +4,14 @@ layout: page
 ---
 <div class="post-list-holder">
     {% for post in site.posts %}
-    <div class="post">
-        <h4>
-            <a href="{{ post.url }}">{{ post.title }}</a> 
-        </h4>
-        <p class="post-meta">By {{ post.author }} • {{ post.date | date_to_string }}</p>
-        {{ post.excerpt }}<small><a href="{{ post.url }}">More...</a></small>
-    </div>
+      {% if post.categories contains "blog" or post.categories contains "announce" %}
+      <div class="post">
+          <h4>
+              <a href="{{ post.url }}">{{ post.title }}</a> 
+          </h4>
+          <p class="post-meta">By {{ post.author }} • {{ post.date | date_to_string }}</p>
+          {{ post.excerpt }}<small><a href="{{ post.url }}">More...</a></small>
+      </div>
+      {% endif %}
     {% endfor %}
 </div>

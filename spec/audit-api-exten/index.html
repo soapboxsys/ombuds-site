@@ -1,6 +1,8 @@
 ---
 layout: spec-page
-title: Audit API Extension
+title: Specification
 ---
 
-{% markdown spec/audit-api-exten.md %}
+{% for post in site.categories.audit %}
+    {{ post.content }}
+{% endfor %}

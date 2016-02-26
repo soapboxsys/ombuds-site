@@ -1,3 +1,7 @@
+---
+category: mobile
+---
+
 DD06 Mobile Architecture Design
 ========================== 
 

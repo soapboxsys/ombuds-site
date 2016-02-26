@@ -1,4 +1,6 @@
-<!-- title: Endorsment Def -->
+---
+category: endorsement
+---
 
 DD04 Endorsement Specification
 ==============================
