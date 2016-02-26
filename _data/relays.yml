@@ -1,7 +1,4 @@
-- hostname: 'https://relay.nskelsey.com'
-  alt_urls: 
-    - 'https://relay.soapbox.systems'
-    - 'http://54.32.23.12'
+- hostname: 'https://ox.nskelsey.com'
   startDate: "2/4/2016"
   serviceProvider: "Amazon's Cloud"
   torHSAddr: "http://3g2upl4pq6kufc4m.onion/"
