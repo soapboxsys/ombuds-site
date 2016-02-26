@@ -1,4 +1,4 @@
-- hostname: 'https://ox.nskelsey.com'
+- hostname: 'http://ox.nskelsey.com'
   startDate: "2/4/2016"
   serviceProvider: "Amazon's Cloud"
   torHSAddr: "http://3g2upl4pq6kufc4m.onion/"
