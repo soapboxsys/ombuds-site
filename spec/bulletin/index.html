@@ -1,6 +1,8 @@
 ---
 layout: spec-page
-title: Bulletin
+title: Specification
 ---
 
-{% markdown spec/bulletin.md %}
+{% for post in site.categories.bulletin %}
+    {{ post.content }}
+{% endfor %}

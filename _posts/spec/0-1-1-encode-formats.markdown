@@ -1,4 +1,6 @@
-<!-- title: Record Encoding Formats -->
+---
+category: encode
+---
 
 DD05 Record Encoding Formats
 ============================

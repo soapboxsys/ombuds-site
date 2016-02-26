@@ -1,6 +1,8 @@
 ---
 layout: spec-page
-title: Web Relay API
+title: Specification
 ---
 
-{% markdown spec/web-relay-api.md %}
+{% for post in site.categories.web %}
+    {{ post.content }}
+{% endfor %}

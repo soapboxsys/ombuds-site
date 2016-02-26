@@ -1,6 +1,8 @@
 ---
 layout: spec-page
-title: Design Documentation Versions
+title: Specification
 ---
 
-{% markdown spec/versions.md %}
+{% for post in site.categories.version %}
+    {{ post.content }}
+{% endfor %}

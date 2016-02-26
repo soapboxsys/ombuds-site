@@ -1,6 +1,8 @@
 ---
 layout: spec-page
-title: Mobile Architecture
+title: Specification
 ---
 
-{% markdown spec/mobile-arch.md %}
+{% for post in site.categories.mobile %}
+    {{ post.content }}
+{% endfor %}

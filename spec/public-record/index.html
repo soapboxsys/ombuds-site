@@ -1,6 +1,8 @@
 ---
 layout: spec-page
-title: Public Record
+title: Specification
 ---
 
-{% markdown spec/public-record.md %}
+{% for post in site.categories.public %}
+    {{ post.content }}
+{% endfor %}

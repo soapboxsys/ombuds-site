@@ -1,6 +1,8 @@
 ---
 layout: spec-page
-title: Author
+title: Specification
 ---
 
-{% markdown spec/author.md %}
+{% for post in site.categories.author %}
+    {{ post.content }}
+{% endfor %}
