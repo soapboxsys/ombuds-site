@@ -1,14 +1,4 @@
 - hostname: 'http://ox.nskelsey.com'
   startDate: "2/4/2016"
   serviceProvider: "Amazon's Cloud"
-  torHSAddr: "http://3g2upl4pq6kufc4m.onion/"
   img: "nick-node.png"
-- hostname: 'https://web.kuck.io'
-  startDate: "2/5/2016"
-  serviceProvider: "someone's basement"
-  img: "alex-node.png"
-- hostname: 'https://paper.mystery.net'
-  startDate: "3/5/2016"
-  serviceProvider: "a spooky place"
-  img: "cute-ghost.png"
-  torHSAddr: "http://3g2upl4pq6kufc4m.onion/"
