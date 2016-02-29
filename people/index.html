@@ -20,57 +20,63 @@ layout: page
     </div>
 </div>
 {% endfor %}
-<h2><a name="join-us">Join Our Team</a></h2>
-<p>If you want to help push this project forward, let us know! 
-We accept pull requests, friend requests, and questions of all types.
-Either contact one of the contributors above or email the current project maintainer at
-<a mailto:ombuds@soapbox.systems>ombuds@soapbox.systems</a>.
-</p>
+<div class="join">
+    <h2><a name="join-us">Join Our Team</a></h2>
+    <p>
+        If you want to help push this project forward, let us know! 
+        We accept pull requests, friend requests, and questions of all types.
+        Either contact one of the contributors above or email the current project maintainer at
+        <a mailto:ombuds@soapbox.systems>ombuds@soapbox.systems</a>.
+    </p>
+</div>
 
-<h2>Advisors</h2>
-<div class="row-adv-imgs">
-    {% for person in site.data.advisors %}
-    <div>
-        <a href="{{ person.url }}">
-            <img src="/res/images/advisors/{{ person.img_url }}" />
-        </a>
-        <p>
-            <a href="{{ person.url }}" class="big-link">{{ person.name }}</a>
-        </p>
-        <p>{{ person.title }}</p>
+<div class="advisors">
+    <h2>Advisors</h2>
+    <div class="row-adv-imgs">
+        {% for person in site.data.advisors %}
+        <div>
+            <a href="{{ person.url }}">
+                <img src="/res/images/advisors/{{ person.img_url }}" />
+            </a>
+            <p>
+                <a href="{{ person.url }}" class="big-link">{{ person.name }}</a>
+            </p>
+            <p>{{ person.title }}</p>
+        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
 </div>
 
 
+<div class="collaborators">
+    <h2>Collaborators</h2>
 
-<h2>Collaborators</h2>
+    <p>
+    We have recieved support of some kind or another from the great people within these organizations.
+    Go check them out.
+    </p>
 
-<p>
-We have recieved support of some kind or another from the great people within these organizations.
-Go check them out.
-</p>
-
-<div class="org-imgs">
-    <div>
-        <a href="http://hacdc.org">
-            <img src="/res/images/orgs/hacdc_logo.jpg" />
-        </a>
-    </div>
-    <div>
-        <a href="http://tomtomfest.com">
-            <img  src="/res/images/orgs/ttff.png" />
-        </a>
-    </div>
-    <div>
-        <a href="http://www.knightfoundation.org/grants/201551198/">
-            <img id="knight-logo" src="/res/images/orgs/knightfdn.jpg" />
-        </a>
-    </div>
-    <div>
-        <a href="http://hackcville.com">
-            <img src="/res/images/orgs/hackcville.png" />
-        </a>
+    <div class="org-imgs">
+        <div>
+            <a href="http://hacdc.org">
+                <img src="/res/images/orgs/hacdc_logo.jpg" />
+            </a>
+        </div>
+        <div>
+            <a href="http://tomtomfest.com">
+                <img  src="/res/images/orgs/ttff.png" />
+            </a>
+        </div>
+        <div>
+            <a href="http://www.knightfoundation.org/grants/201551198/">
+                <img id="knight-logo" src="/res/images/orgs/knightfdn.jpg" />
+            </a>
+        </div>
+        <div>
+            <a href="http://hackcville.com">
+                <img src="/res/images/orgs/hackcville.png" />
+            </a>
+        </div>
     </div>
 </div>
 </article>
