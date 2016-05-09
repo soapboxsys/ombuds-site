@@ -2,3 +2,11 @@
   startDate: "2/4/2016"
   serviceProvider: "Amazon's Cloud"
   img: "nick-node.png"
+- hostname: 'https://oh.soaringindustries.space/'
+  startDate: "5/5/2016"
+  serviceProvider: "Soaring Industires llc"
+  img: "hacdc.png"
+- hostname: "https://o.member.hacdc.org/"
+  startDate: "5/8/2016"
+  serviceProvider: "HacDC member services"
+  img: "mirage.png"
